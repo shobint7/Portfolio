@@ -326,7 +326,7 @@
     </a>
     <nav style="display: flex; align-items: center; gap: 4px; padding: 4px; border-radius: 999px; background: rgba(255,255,255,0.075); border: 1px solid rgba(255,255,255,0.132); box-shadow: 0 1px 0 rgba(255,255,255,0.17) inset; font-size: 12.5px;">
       <a href="#shelf" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 12px 17px; border-radius: 999px; color: rgba(245,245,247,0.72); transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="background: #f5f5f7; color: #08080a; box-shadow: 0 1px 0 rgba(255,255,255,0.24) inset, 0 6px 14px -6px rgba(0,0,0,0.5);">Shelf</a>
-      <a href="#work" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 12px 17px; border-radius: 999px; color: rgba(245,245,247,0.72); transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="background: #f5f5f7; color: #08080a; box-shadow: 0 1px 0 rgba(255,255,255,0.24) inset, 0 6px 14px -6px rgba(0,0,0,0.5);">Work</a>
+      <a href="#work" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 12px 17px; border-radius: 999px; color: rgba(245,245,247,0.72); transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="background: #f5f5f7; color: #08080a; box-shadow: 0 1px 0 rgba(255,255,255,0.24) inset, 0 6px 14px -6px rgba(0,0,0,0.5);">Gallery</a>
       <a href="#contact" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 12px 17px; border-radius: 999px; color: rgba(245,245,247,0.72); transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="background: #f5f5f7; color: #08080a; box-shadow: 0 1px 0 rgba(255,255,255,0.24) inset, 0 6px 14px -6px rgba(0,0,0,0.5);">Contact</a>
     </nav>
     <a href="https://www.tiron.agency" target="_blank" rel="noopener" style="position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 15px 24px; border-radius: 999px; font-size: 13px; color: #050506; background: linear-gradient(155deg, #ffffff, #e8e8ee), #ffffff; border: 1px solid rgba(255,255,255,0.22); box-shadow: 0 1px 0 rgba(255,255,255,0.088) inset, 0 10px 22px -12px rgba(0,0,0,0.6); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-1px); color: #050506;" style-before="content: ''; position: absolute; top: 0; bottom: 0; width: 40%; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.14), transparent); animation: sheen 4.5s ease-in-out infinite;">Contact TIRON Agency</a>
@@ -349,7 +349,7 @@
   <section data-screen-label="Statement" style="padding: clamp(56px, 11vh, 130px) clamp(20px, 4vw, 56px) clamp(40px, 7vh, 90px);">
     <div style="max-width: 1560px; margin: 0 auto;">
       <div data-reveal="" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,245,247,0.42); margin-bottom: clamp(26px, 4vh, 52px);">Behind the work</div>
-      <p data-reveal="" data-m="statement" style="margin: 0; font-size: clamp(26px, 4.3vw, 76px); line-height: 1.08; letter-spacing: -0.026em; color: #f5f5f7; text-wrap: pretty;">Shobin is a Dubai-based concept designer. He works across brand identity, product interfaces and generative-AI systems — sometimes one, often all three on the same project. He also shoots and directs: photography, videography, and the edit that follows, cutting video and finishing stills himself so the idea survives from frame to final grade.</p>
+      <p data-reveal="" data-m="statement" style="margin: 0; font-size: clamp(26px, 4.3vw, 76px); line-height: 1.08; letter-spacing: -0.026em; color: #f5f5f7; text-wrap: pretty;">Shobin is a Dubai-based concept designer working across brand identity, product interfaces and generative-AI systems. He also shoots, directs and cuts the edit himself. Currently at <a href="https://www.tiron.agency" target="_blank" rel="noopener" style="color: #f5f5f7; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.24); padding-bottom: 2px;">TIRON Agency</a>, Dubai, where most of this work was made.</p>
     </div>
   </section>
 
@@ -377,15 +377,15 @@
         <sc-for list="{{ rows }}" as="row" hint-placeholder-count="2" style="display: contents;">
           <div style="padding: 20px clamp(20px, 2.4vw, 34px) 0;">
             <div style="position: relative;">
-              <div data-m="shelfrow" style="position: relative; z-index: 2; display: flex; align-items: flex-end; gap: clamp(38px, 5vw, 76px); padding: 0 34px; min-height: 96px;">
+              <div data-m="shelfrow" style="position: relative; z-index: 2; display: flex; align-items: flex-end; gap: clamp(46px, 6vw, 96px); padding: 0 34px; min-height: 140px;">
                 <sc-for list="{{ row.items }}" as="b" hint-placeholder-count="3">
                   <div onClick="{{ b.onClick }}" onMouseEnter="{{ b.onEnter }}" onMouseLeave="{{ b.onLeave }}" style="position: relative; flex: none; cursor: pointer; transform: translateY({{ b.lift }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);">
-                    <div style="position: absolute; left: 48px; top: 12px; width: 60px; height: 60px; border-radius: 999px; background: radial-gradient(circle at 50% 50%, #26262a 0 13%, #0b0b0d 14% 15%, #191a1d 16% 100%); box-shadow: 0 10px 18px -10px rgba(0,0,0,0.6); transform: translateX({{ b.discX }}px) rotate({{ b.discR }}deg); transition: transform 0.9s cubic-bezier(0.32,0.72,0,1);">
+                    <div style="position: absolute; left: 72px; top: 18px; width: 90px; height: 90px; border-radius: 999px; background: radial-gradient(circle at 50% 50%, #26262a 0 13%, #0b0b0d 14% 15%, #191a1d 16% 100%); box-shadow: 0 10px 18px -10px rgba(0,0,0,0.6); transform: translateX({{ b.discX }}px) rotate({{ b.discR }}deg); transition: transform 0.9s cubic-bezier(0.32,0.72,0,1);">
                       <div style="position: absolute; inset: 0; border-radius: 999px; background: repeating-radial-gradient(circle at 50% 50%, rgba(255,255,255,0.055) 0 1px, rgba(0,0,0,0) 1px 3px);"></div>
                       <div style="position: absolute; inset: 0; border-radius: 999px; background: conic-gradient(from 210deg, rgba(255,255,255,0.16), rgba(255,255,255,0) 28%, rgba(255,255,255,0.1) 52%, rgba(255,255,255,0) 78%);"></div>
-                      <div style="position: absolute; left: 50%; top: 50%; width: 17px; height: 17px; margin: -8.5px 0 0 -8.5px; border-radius: 999px; background: {{ b.color }};"></div>
+                      <div style="position: absolute; left: 50%; top: 50%; width: 25px; height: 25px; margin: -12.5px 0 0 -12.5px; border-radius: 999px; background: {{ b.color }};"></div>
                     </div>
-                    <div style="position: relative; width: 84px; height: 84px; border-radius: 3px; overflow: hidden; background: {{ b.thumb }}; border: 1px solid rgba(255,255,255,0.121); box-shadow: 0 16px 26px -16px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.16);">
+                    <div style="position: relative; width: 126px; height: 126px; border-radius: 4px; overflow: hidden; background: {{ b.thumb }}; border: 1px solid rgba(255,255,255,0.121); box-shadow: 0 16px 26px -16px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.16);">
                       <div style="position: absolute; inset: 0; background: linear-gradient(148deg, rgba(255,255,255,0.11), rgba(255,255,255,0) 46%);"></div>
                       <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: linear-gradient(90deg, rgba(0,0,0,0.16), rgba(0,0,0,0));"></div>
                       <img src="{{ b.cover }}" alt="{{ b.title }}" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -471,9 +471,10 @@
                 <sc-for list="{{ knobs }}" as="k" hint-placeholder-count="3">
                   <div style="display: flex; flex-direction: column; align-items: center; gap: 9px;">
                     <span style="font-size: 9px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55);">{{ k.label }}</span>
-                    <button type="button" onClick="{{ k.onClick }}" aria-label="{{ k.label }}" style="position: relative; width: 52px; height: 52px; border-radius: 999px; border: 0; padding: 0; cursor: pointer; background: repeating-conic-gradient(from 0deg, #2c2c31 0deg 2.6deg, #101013 2.6deg 5.2deg); box-shadow: 0 12px 18px -10px rgba(0,0,0,0.9), inset 0 -2px 4px rgba(0,0,0,0.8); transform: rotate({{ k.rot }}deg); transition: transform 0.7s cubic-bezier(0.32,0.72,0,1), box-shadow 0.5s ease;" style-hover="box-shadow: 0 16px 22px -10px rgba(0,0,0,0.95), 0 0 0 4px rgba(217,160,106,0.16), inset 0 -2px 4px rgba(0,0,0,0.8);">
-                      <span style="position: absolute; inset: 5px; border-radius: 999px; background: radial-gradient(circle at 38% 26%, #3a3a40, #141417 62%, #08080a); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);"></span>
-                      <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; transform: rotate({{ k.anti }}deg); transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);">
+                    <button type="button" onClick="{{ k.onClick }}" aria-label="{{ k.label }}" title="{{ k.label }}" style="position: relative; width: 52px; height: 52px; border-radius: 999px; border: 0; padding: 0; cursor: pointer; background: transparent; box-shadow: 0 12px 18px -10px rgba(0,0,0,0.9); transition: box-shadow 0.5s ease; -webkit-tap-highlight-color: transparent;" style-hover="box-shadow: 0 16px 22px -10px rgba(0,0,0,0.95), 0 0 0 4px rgba(217,160,106,0.16);">
+                      <span style="position: absolute; inset: 0; border-radius: 999px; pointer-events: none; background: repeating-conic-gradient(from 0deg, #2c2c31 0deg 2.6deg, #101013 2.6deg 5.2deg); box-shadow: inset 0 -2px 4px rgba(0,0,0,0.8); transform: rotate({{ k.rot }}deg); transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);"></span>
+                      <span style="position: absolute; inset: 5px; border-radius: 999px; pointer-events: none; background: radial-gradient(circle at 38% 26%, #3a3a40, #141417 62%, #08080a); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);"></span>
+                      <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none;">
                         <svg viewBox="0 0 24 24" width="17" height="17" fill="{{ k.dot }}" aria-hidden="true" style="filter: drop-shadow(0 0 6px {{ k.dotGlow }});">
                           <path d="{{ k.path }}"></path>
                         </svg>
@@ -495,46 +496,105 @@
             </div>
           </div>
 
-          <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
-            <sc-for list="{{ chips }}" as="c" hint-placeholder-count="7">
-              <button type="button" onClick="{{ c.onClick }}" title="{{ c.artist }}" style="width: 34px; height: 34px; flex: none; padding: 0; border-radius: 9px; cursor: pointer; border: 1px solid {{ c.border }}; background: {{ c.bg }}; opacity: {{ c.opacity }}; box-shadow: {{ c.shadow }}; transition: transform 0.5s cubic-bezier(0.32,0.72,0,1), opacity 0.4s ease, box-shadow 0.4s ease;" style-hover="transform: translateY(-4px) scale(1.06); opacity: 1;"></button>
+          <div style="display: flex; align-items: flex-end; justify-content: center; padding: 10px 0 4px 22px;">
+            <sc-for list="{{ chips }}" as="c" hint-placeholder-count="4">
+              <button type="button" onClick="{{ c.onClick }}" title="{{ c.label }}" aria-label="{{ c.label }}" style="position: relative; width: 66px; height: 66px; flex: none; margin-left: -22px; padding: 0; border-radius: 15px; cursor: pointer; border: 1px solid {{ c.border }}; background: {{ c.bg }}; opacity: {{ c.opacity }}; box-shadow: {{ c.shadow }}, 0 14px 22px -14px rgba(0,0,0,0.9); transform: rotate({{ c.rot }}deg) translateY({{ c.lift }}px); z-index: {{ c.z }}; transition: transform 0.5s cubic-bezier(0.32,0.72,0,1), opacity 0.4s ease, box-shadow 0.4s ease;" style-hover="transform: rotate(0deg) translateY(-10px) scale(1.08); opacity: 1; z-index: 30;">
+                <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: {{ c.iconOp }}; transition: opacity 0.4s ease;">
+                  <svg viewBox="0 0 24 24" width="26" height="26" fill="rgba(255,255,255,0.9)" aria-hidden="true" style="filter: drop-shadow(0 1px 2px rgba(0,0,0,0.7));">
+                    <path d="{{ c.mark }}"></path>
+                  </svg>
+                </span>
+                <span style="position: absolute; left: 0; right: 0; bottom: 18px; height: 22px; display: {{ c.eqShow }}; align-items: flex-end; justify-content: center; gap: 3px;">
+                  <span style="width: 3px; height: 100%; border-radius: 2px; background: rgba(255,255,255,0.92); transform-origin: 50% 100%; animation: eq 1.05s ease-in-out infinite; animation-play-state: {{ c.eqRun }};"></span>
+                  <span style="width: 3px; height: 100%; border-radius: 2px; background: rgba(255,255,255,0.92); transform-origin: 50% 100%; animation: eq 1.05s ease-in-out 0.22s infinite; animation-play-state: {{ c.eqRun }};"></span>
+                  <span style="width: 3px; height: 100%; border-radius: 2px; background: rgba(255,255,255,0.92); transform-origin: 50% 100%; animation: eq 1.05s ease-in-out 0.44s infinite; animation-play-state: {{ c.eqRun }};"></span>
+                </span>
+              </button>
             </sc-for>
           </div>
-          <div style="text-align: center; font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.26); padding-top: 14px;">on repeat while I work</div>
+          <div style="text-align: center; font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.26); padding-top: 14px;">AI generated music</div>
         </div>
       </sc-if>
     </div>
   </section>
 
 
-  <section id="work" data-screen-label="Selected work" style="padding: clamp(60px, 10vh, 110px) clamp(20px, 5vw, 64px); max-width: 1560px; margin: 0 auto;">
+  <section id="work" data-screen-label="Gallery" style="padding: clamp(60px, 10vh, 110px) clamp(20px, 5vw, 64px); max-width: 1560px; margin: 0 auto;">
     <div data-reveal="" style="display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 34px;">
-      <h2 style="margin: 0; font-size: clamp(26px, 3.6vw, 44px); letter-spacing: -0.03em; font-weight: 600;">Selected work</h2>
-      <a href="https://www.behance.net/shobinthomas1" target="_blank" rel="noopener" style="font-size: 14px; color: rgba(245,245,247,0.56); border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 2px; transition: color 0.35s ease;" style-hover="color: #f5f5f7;">All projects on Behance ↗</a>
+      <div>
+        <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,245,247,0.42); margin-bottom: 10px;">Shot on my phone</div>
+        <h2 style="margin: 0; font-size: clamp(26px, 3.6vw, 44px); letter-spacing: -0.03em; font-weight: 600;">Gallery</h2>
+      </div>
+      <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.42);">{{ galTotal }}</span>
     </div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: clamp(26px, 3vw, 46px) clamp(18px, 2.2vw, 30px);">
-      <sc-for list="{{ grid }}" as="card" hint-placeholder-count="12">
-        <div data-reveal="" onClick="{{ card.onClick }}" onMouseEnter="{{ card.onEnter }}" onMouseLeave="{{ card.onLeave }}" style="cursor: pointer;">
-          <div style="position: relative; aspect-ratio: 5 / 4; transform: translateY({{ card.fLift }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);">
-            <div style="position: absolute; left: 3%; top: 9%; width: 36%; height: 13%; border-radius: 9px 14px 0 0; background: {{ card.fBack }}; box-shadow: 0 -1px 0 rgba(255,255,255,0.132) inset;"></div>
-            <div style="position: absolute; left: 3%; right: 3%; top: 20%; bottom: 0; border-radius: 3px 14px 16px 16px; background: {{ card.fBack }}; box-shadow: 0 26px 38px -26px rgba(0,0,0,0.4);"></div>
 
-            <div style="position: absolute; left: 24%; right: 9%; top: 4%; height: 62%; border-radius: 7px; overflow: hidden; background: #16161a; transform: rotate({{ card.fRotB }}deg) translateY({{ card.fRiseB }}px); transform-origin: 50% 100%; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1); box-shadow: 0 12px 20px -14px rgba(0,0,0,0.5);">
-              <div style="width: 100%; height: 100%; background: {{ card.fSheet }};"></div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(24px, 3vw, 44px) clamp(18px, 2.4vw, 34px); max-width: 1100px;">
+      <sc-for list="{{ folders }}" as="f" hint-placeholder-count="3">
+        <div data-reveal="" onClick="{{ f.onClick }}" onMouseEnter="{{ f.onEnter }}" onMouseLeave="{{ f.onLeave }}" style="cursor: {{ f.cursor }}; opacity: {{ f.op }}; transition: opacity 0.4s ease;">
+          <div style="position: relative; aspect-ratio: 5 / 4; transform: translateY({{ f.fLift }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);">
+            <div style="position: absolute; left: 3%; top: 9%; width: 36%; height: 13%; border-radius: 9px 14px 0 0; background: {{ f.fBack }}; box-shadow: 0 -1px 0 rgba(255,255,255,0.132) inset;"></div>
+            <div style="position: absolute; left: 3%; right: 3%; top: 20%; bottom: 0; border-radius: 3px 14px 16px 16px; background: {{ f.fBack }}; box-shadow: 0 26px 38px -26px rgba(0,0,0,0.4);"></div>
+
+            <div style="position: absolute; left: 30%; right: 4%; top: 6%; height: 60%; border-radius: 7px; overflow: hidden; background: #16161a; transform: rotate({{ f.fRotC }}deg) translateY({{ f.fRiseC }}px); transform-origin: 50% 100%; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1); box-shadow: 0 10px 18px -14px rgba(0,0,0,0.5);">
+              <sc-if value="{{ f.hasCover3 }}" hint-placeholder-val="{{ false }}">
+                <img src="{{ f.cover3 }}" alt="" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.62;">
+              </sc-if>
             </div>
-            <div style="position: absolute; left: 11%; right: 22%; top: 1%; height: 64%; border-radius: 7px; overflow: hidden; background: #16161a; transform: rotate({{ card.fRotA }}deg) translateY({{ card.fRiseA }}px); transform-origin: 50% 100%; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1); box-shadow: 0 16px 26px -16px rgba(0,0,0,0.55);">
-              <img src="{{ card.cover }}" alt="{{ card.title }}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div style="position: absolute; left: 22%; right: 11%; top: 3%; height: 62%; border-radius: 7px; overflow: hidden; background: #16161a; transform: rotate({{ f.fRotB }}deg) translateY({{ f.fRiseB }}px); transform-origin: 50% 100%; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1); box-shadow: 0 12px 20px -14px rgba(0,0,0,0.5);">
+              <sc-if value="{{ f.hasCover2 }}" hint-placeholder-val="{{ false }}">
+                <img src="{{ f.cover2 }}" alt="" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.82;">
+              </sc-if>
+            </div>
+            <div style="position: absolute; left: 11%; right: 22%; top: 1%; height: 64%; border-radius: 7px; overflow: hidden; background: #16161a; transform: rotate({{ f.fRotA }}deg) translateY({{ f.fRiseA }}px); transform-origin: 50% 100%; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1); box-shadow: 0 16px 26px -16px rgba(0,0,0,0.55);">
+              <sc-if value="{{ f.hasCover }}" hint-placeholder-val="{{ false }}">
+                <img src="{{ f.cover }}" alt="{{ f.name }}" loading="lazy" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+              </sc-if>
             </div>
 
-            <div style="position: absolute; left: 3%; right: 3%; bottom: 0; height: 52%; border-radius: 14px; background: {{ card.fGlass }}; border: 1px solid rgba(255,255,255,0.17); box-shadow: inset 0 1px 0 rgba(255,255,255,0.17), inset 0 -14px 24px rgba(255,255,255,0.099), 0 20px 30px -22px rgba(0,0,0,0.4); backdrop-filter: blur(7px) saturate(1.5); -webkit-backdrop-filter: blur(7px) saturate(1.5); transform: translateY({{ card.fFront }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);"></div>
+            <div style="position: absolute; left: 3%; right: 3%; bottom: 0; height: 52%; border-radius: 14px; background: {{ f.fGlass }}; border: 1px solid rgba(255,255,255,0.17); box-shadow: inset 0 1px 0 rgba(255,255,255,0.17), inset 0 -14px 24px rgba(255,255,255,0.099), 0 20px 30px -22px rgba(0,0,0,0.4); backdrop-filter: blur(7px) saturate(1.5); -webkit-backdrop-filter: blur(7px) saturate(1.5); transform: translateY({{ f.fFront }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);"></div>
           </div>
 
           <div style="text-align: center; margin-top: 16px;">
-            <div style="font-size: 15px; font-weight: 500; letter-spacing: -0.014em;">{{ card.title }}</div>
-            <div style="display: inline-block; margin-top: 7px; padding: 4px 11px; border-radius: 999px; background: rgba(255,255,255,0.07); font-size: 12px; color: rgba(245,245,247,0.5);">{{ card.category }} · {{ card.year }}</div>
+            <div style="font-size: 15px; font-weight: 500; letter-spacing: -0.014em;">{{ f.name }}</div>
+            <div style="display: inline-block; margin-top: 7px; padding: 4px 11px; border-radius: 999px; background: rgba(255,255,255,0.07); font-size: 12px; color: rgba(245,245,247,0.5);">{{ f.note }} · {{ f.count }}</div>
           </div>
         </div>
       </sc-for>
+    </div>
+
+    <div onClick="{{ galClose }}" style="position: fixed; inset: 0; z-index: 95; display: flex; align-items: center; justify-content: center; padding: clamp(10px, 2.4vw, 44px); background: rgba(5,5,6,0.84); backdrop-filter: blur(22px) saturate(1.4); -webkit-backdrop-filter: blur(22px) saturate(1.4); opacity: {{ galOp }}; visibility: {{ galVis }}; transition: opacity 0.5s ease, visibility 0.5s ease;">
+      <div onClick="{{ stopEvt }}" style="position: relative; width: 100%; max-width: 1400px; max-height: 88vh; display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; background: rgba(14,14,17,0.94); border: 1px solid rgba(255,255,255,0.13); box-shadow: 0 70px 130px -50px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.09); transform: translateY({{ galY }}px) scale({{ galSc }}); transition: transform 0.65s cubic-bezier(0.32,0.72,0,1); cursor: default;">
+        <div style="flex: none; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding: clamp(15px, 1.8vw, 23px) clamp(16px, 2vw, 28px); border-bottom: 1px solid rgba(255,255,255,0.09); background: rgba(20,20,24,0.6);">
+          <div style="display: flex; align-items: baseline; gap: 12px;">
+            <h3 style="margin: 0; font-size: clamp(18px, 2.1vw, 26px); letter-spacing: -0.026em; font-weight: 600;">{{ galTitle }}</h3>
+            <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.42);">{{ galCount }}</span>
+          </div>
+          <div onClick="{{ galClose }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; padding: 11px 18px; border-radius: 999px; font-size: 12.5px; color: rgba(245,245,247,0.66); background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.13); transition: all 0.35s ease;" style-hover="background: #f5f5f7; color: #08080a;">Close</div>
+        </div>
+        <div data-no-smooth="" style="flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: clamp(14px, 1.8vw, 24px);">
+          <div style="columns: 280px 4; column-gap: clamp(10px, 1.2vw, 16px);">
+            <sc-for list="{{ photos }}" as="p" hint-placeholder-count="6">
+              <div onClick="{{ p.onClick }}" style="break-inside: avoid; margin: 0 0 clamp(10px, 1.2vw, 16px); border-radius: 10px; overflow: hidden; background: #101013; cursor: zoom-in; border: 1px solid rgba(255,255,255,0.07); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), border-color 0.4s ease;" style-hover="transform: translateY(-3px); border-color: rgba(255,255,255,0.2);">
+                <sc-if value="{{ p.isImg }}" hint-placeholder-val="{{ false }}">
+                  <img src="{{ p.src }}" alt="{{ p.alt }}" loading="lazy" style="width: 100%; height: auto; display: block;">
+                </sc-if>
+                {{ p.vidNode }}
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div onClick="{{ lbClose }}" style="position: fixed; inset: 0; z-index: 112; display: {{ lbShow }}; align-items: center; justify-content: center; padding: clamp(16px, 4vw, 54px); background: rgba(5,5,6,0.86); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4); cursor: zoom-out;">
+      <div style="position: relative; max-width: 100%; max-height: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+        {{ lbNode }}
+        <div style="display: flex; align-items: center; gap: 10px;">
+          <div onClick="{{ lbPrev }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; width: 42px; height: 42px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(245,245,247,0.8); font-size: 15px;" style-hover="background: #f5f5f7; color: #08080a;">‹</div>
+          <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.5); min-width: 150px; text-align: center;">{{ lbLabel }}</span>
+          <div onClick="{{ lbNext }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; width: 42px; height: 42px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(245,245,247,0.8); font-size: 15px;" style-hover="background: #f5f5f7; color: #08080a;">›</div>
+        </div>
+      </div>
     </div>
 
     <div data-reveal="" style="margin-top: clamp(60px, 10vh, 110px);">
@@ -703,6 +763,23 @@ const CATS = { "Branding": 250, "Interfaces": 250 };
 const BE = "https://mir-s3-cdn-cf.behance.net/projects/";
 const FOLDER_HUES = [250, 158, 35, 300, 200, 20];
 
+const GAL_SETS = [
+  { name: "Herzens BTS Dubai Shoot", note: "On set, Dubai", hue: 20,
+    dir: "uploads/Compressed for Web/Herzens BTS Dubai Shoot/",
+    files: ["L1790916.jpg", "20260709_062020.jpg", "20260709_070221.jpg", "20260709_072309.jpg", "20260709_084527.mp4", "20260709_084913 (1).jpg", "20260709_084947.jpg", "20260709_085217~2.jpg", "20260709_084558.mp4", "20260709_085236.jpg", "20260709_085318.jpg", "20260709_170319.jpg", "20260709_171943.jpg", "20260709_172705 (1).jpg", "20260709_172957.jpg", "20260709_185230.jpg"] },
+  { name: "Food", note: "Plates and light", hue: 35,
+    dir: "uploads/Compressed for Web/Food/",
+    files: ["1782575614025.jpg", "20260627_110337.jpg", "20260702_100022~2.jpg", "20260719_111448.jpg", "20260719_111805.jpg", "20260719_111904 (1).jpg", "20260719_111904.jpg", "20260719_114147.jpg", "20260719_114155.jpg", "20260724_121645.jpg", "20260724_121735~2.jpg", "20260724_123020.jpg"] },
+  { name: "Tiron Office", note: "Studio days", hue: 250,
+    dir: "uploads/Compressed for Web/Tiron Office/",
+    files: ["20260626_201136.jpg", "20260626_201156.jpg", "20260626_201214.jpg", "20260626_201301.jpg", "20260626_201318.jpg", "20260626_201407.jpg"] }
+];
+GAL_SETS.forEach(function (g) {
+  g.shots = g.files.map(function (f) {
+    return { set: g.name, src: encodeURI(g.dir + f), vid: /\.mp4$/i.test(f) };
+  });
+});
+
 const RAW = [
   ["Handcrafted by JINU", "Branding", "2026", "Identity and packaging for a small-batch gift hamper maker.", "4bc934246205809.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png", "246205809/Handcrafted-by-JINU-Gift-Hamper-Branding"],
   ["GEN-W AI — App & Web", "Interfaces", "2026", "Mobile app and marketing site for an AI product, from flows to final UI.", "30a23b239234005.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png", "239234005/GEN-W-AI-UIUX-Mobile-App-and-Website"],
@@ -731,18 +808,90 @@ const PLATES = ["detail 01 — 1200×1600", "detail 02 — 1200×1600", "detail 
 
 const TOOLS = ["Figma", "After Effects", "Illustrator", "Photoshop", "Blender", "Midjourney", "ComfyUI", "Higgsfield", "Gemini NanoBanana — Omni", "Claude", "Webflow", "Framer", "HTML/CSS"];
 
+const MARKS = [
+  "M12 3v10.6a3.2 3.2 0 1 0 2 3V7h4V3z",
+  "M3 10h2v4H3zm4-3h2v10H7zm4-3h2v16h-2zm4 4h2v8h-2zm4 3h2v2h-2z",
+  "M12 3a9 9 0 1 0 0 18 9 9 0 0 0 0-18zm0 7.2a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6z",
+  "M12 3a8 8 0 0 0-8 8v6h4v-7H6a6 6 0 0 1 12 0h-2v7h4v-6a8 8 0 0 0-8-8z"
+];
+
 const TRACKS = [
-  ["Bonobo", "Kerala"],
-  ["Jamie xx", "Gosh"],
-  ["Nils Frahm", "Says"],
-  ["Four Tet", "Two Thousand and Seventeen"],
-  ["Floating Points", "Silhouettes"],
-  ["Burial", "Archangel"],
-  ["Jon Hopkins", "Emerald Rush"]
+  ["Shobin's mix", "Surgical Grace", "uploads/Surgical_Grace.mp3"],
+  ["Shobin's mix", "Gold on the Horizon", "uploads/Gold_on_the_Horizon.mp3"],
+  ["Shobin's mix", "The Weight of Morning Light", "uploads/The_Weight_of_Morning_Light.mp3"],
+  ["Shobin's mix", "Drinking the Shadows", "uploads/Drinking_the_Shadows.mp3"]
 ];
 
 class Component extends DCLogic {
-  state = { muted: true, live: -1, hover: -1, sel: -1, shown: 0, detail: -1, playing: true, track: 2, cat: "Graphics", knob: 0 };
+  state = { muted: false, live: -1, hover: -1, sel: -1, shown: 0, detail: -1, playing: false, muted2: 0, track: 0, cat: "Graphics", knob: 0 };
+
+  getAudio() {
+    if (!this.audio) {
+      const a = document.createElement("audio");
+      a.preload = "auto";
+      a.setAttribute("data-keep-sound", "0");
+      a.style.display = "none";
+      a.addEventListener("ended", () => this.playTrack((this.state.track + 1) % TRACKS.length));
+      document.body.appendChild(a);
+      this.audio = a;
+    }
+    return this.audio;
+  }
+
+  playTrack(i) {
+    const t = ((i % TRACKS.length) + TRACKS.length) % TRACKS.length;
+    const a = this.getAudio();
+    const src = encodeURI(TRACKS[t][2]);
+    if (this.audioSrc !== src) { this.audioSrc = src; a.src = src; a.currentTime = 0; }
+    a.muted = !!this.state.muted;
+    a.volume = 0.72;
+    this.setState({ track: t, playing: true, knob: this.state.knob + 1 });
+    this.attemptPlay();
+  }
+
+  // Setting .src then calling play() immediately rejects with AbortError while the
+  // new file loads — that is not an autoplay block, so only re-try muted for
+  // NotAllowedError and otherwise wait for the media to be ready.
+  attemptPlay() {
+    const a = this.audio;
+    if (!a) return;
+    this.playToken = (this.playToken || 0) + 1;
+    const token = this.playToken;
+    const p = a.play();
+    if (!p || !p.catch) return;
+    p.catch((err) => {
+      if (token !== this.playToken || !this.state.playing) return;
+      const name = err && err.name;
+      if (name === "NotAllowedError" || name === "SecurityError") {
+        a.muted = true;
+        this.setState({ muted: true });
+        const p2 = a.play();
+        if (p2 && p2.catch) p2.catch(() => this.setState({ playing: false }));
+        return;
+      }
+      const retry = () => {
+        if (token !== this.playToken || !this.state.playing) return;
+        const p3 = a.play();
+        if (p3 && p3.catch) p3.catch(() => {});
+      };
+      if (a.readyState >= 3) retry();
+      else a.addEventListener("canplay", retry, { once: true });
+    });
+  }
+
+  pauseTrack() {
+    this.playToken = (this.playToken || 0) + 1;
+    if (this.audio) this.audio.pause();
+    this.setState({ playing: false });
+  }
+
+  syncAudio() {
+    const a = this.audio;
+    if (!a) return;
+    a.muted = !!this.state.muted;
+    if (this.state.playing && a.paused && a.readyState >= 2) this.attemptPlay();
+    if (!this.state.playing && !a.paused) a.pause();
+  }
   heroRef = React.createRef();
   filmRef = React.createRef();
   filmTimeRef = React.createRef();
@@ -772,8 +921,14 @@ class Component extends DCLogic {
         .catch(() => {});
     }
     this.clockTimer = setInterval(() => { const t = this.clockNow(); if (t !== this.lastClock) this.forceUpdate(); }, 20000);
-    this.onKey = (e) => { if (e.key === "Escape" && this.state.detail >= 0) this.setDetail(-1); };
+    this.onKey = (e) => {
+      if (e.key !== "Escape") return;
+      if (this.state.detail >= 0) return this.setDetail(-1);
+      if (typeof this.state.lb === "number" && this.state.lb >= 0) return this.setState({ lb: -1 });
+      if (this.state.gset) this.setState({ gset: "" });
+    };
     document.addEventListener("keydown", this.onKey);
+    this.syncAudio();
 
     this.onScroll = () => {
       if (this.raf) return;
@@ -983,6 +1138,7 @@ class Component extends DCLogic {
   }
 
   componentWillUnmount() {
+    if (this.audio) { this.audio.pause(); this.audio.src = ""; this.audio = null; }
     cancelAnimationFrame(this.preRaf);
     cancelAnimationFrame(this.smoothRaf);
     if (this.smoothWheel) window.removeEventListener("wheel", this.smoothWheel);
@@ -998,7 +1154,7 @@ class Component extends DCLogic {
     if (this.mo) this.mo.disconnect();
   }
 
-  componentDidUpdate() { this.onScroll(); this.queueScan(); }
+  componentDidUpdate() { this.onScroll(); this.queueScan(); this.syncAudio(); }
 
   applyScroll() {
     const section = document.getElementById("showcase");
@@ -1252,7 +1408,7 @@ class Component extends DCLogic {
         shadow: active
           ? "0 32px 46px -22px rgba(0,0,0,0.5), 0 2px 6px rgba(0,0,0,0.18)"
           : "0 14px 22px -14px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.12)",
-        discX: active ? 30 * m : 6,
+        discX: active ? 44 * m : 9,
         discR: isSel ? 210 * m : (isHov ? 90 * m : 0),
         onClick: () => this.pick(i),
         onEnter: () => this.setState({ hover: i }),
@@ -1315,10 +1471,14 @@ class Component extends DCLogic {
         labelOpacity: o === 0 ? 1 : 0,
         labelVis: o === 0 ? "visible" : "hidden",
         events: vis ? "auto" : "none",
-        onClick: () => this.setState({ track: i, playing: true })
+        onClick: () => this.playTrack(i)
       };
     });
 
+    const gset = this.state.gset || "";
+    const openFolder = GAL_SETS.filter((g) => g.name === gset)[0] || null;
+    const shots = openFolder ? openFolder.shots : [];
+    const lb = typeof this.state.lb === "number" ? this.state.lb : -1;
     return {
       tabs, rows, accent, open,
       shelfCount: books.length + " projects · " + cats.length + " shelves",
@@ -1354,6 +1514,77 @@ class Component extends DCLogic {
       nextTitle: books[nextIdx].title,
       openNext: () => this.setState({ detail: nextIdx, sel: nextIdx, shown: nextIdx }),
       closeDetail: () => this.setDetail(-1),
+      folders: GAL_SETS.map((g, i) => {
+        const on = this.state.ghover === i || gset === g.name;
+        const empty = g.files.length === 0;
+        const stills = g.shots.filter((s) => !s.vid);
+        const cover = stills[0];
+        return {
+          name: g.name,
+          note: empty ? "Drop the folder in" : g.note,
+          count: empty ? "Empty" : g.files.length + (g.files.length === 1 ? " frame" : " frames"),
+          cover: cover ? cover.src : "",
+          hasCover: !!cover,
+          cover2: stills[1] ? stills[1].src : "",
+          hasCover2: !!stills[1],
+          cover3: stills[2] ? stills[2].src : "",
+          hasCover3: !!stills[2],
+          fRiseC: on ? -4 : 0,
+          fRotC: on ? 8.5 : 4.2,
+          onClick: empty ? () => {} : () => this.setState({ gset: gset === g.name ? "" : g.name, lb: -1 }),
+          onEnter: () => this.setState({ ghover: i }),
+          onLeave: () => this.setState({ ghover: -1 }),
+          cursor: empty ? "default" : "pointer",
+          op: empty ? 0.42 : 1,
+          fLift: on ? -6 : 0,
+          fFront: on ? 7 : 0,
+          fRiseA: on ? -13 : 0,
+          fRiseB: on ? -7 : 0,
+          fRotA: on ? -3.4 : -1.2,
+          fRotB: on ? 3.2 : 1.4,
+          fBack: "oklch(0.30 0.055 " + g.hue + ")",
+          fSheet: "oklch(0.42 0.045 " + g.hue + ")",
+          fGlass: "oklch(0.40 0.05 " + g.hue + " / 0.5)"
+        };
+      }),
+      galTotal: GAL_SETS.filter((g) => g.files.length).length + " folders",
+      galOpen: !!openFolder,
+      galVis: openFolder ? "visible" : "hidden",
+      galOp: openFolder ? 1 : 0,
+      galY: openFolder ? 0 : 30,
+      galSc: openFolder ? 1 : 0.965,
+      stopEvt: (e) => e.stopPropagation(),
+      galTitle: openFolder ? openFolder.name : "",
+      galCount: shots.length + (shots.length === 1 ? " frame" : " frames"),
+      galClose: () => this.setState({ gset: "", lb: -1 }),
+      photos: shots.map((p, i) => ({
+        src: p.src,
+        isImg: !p.vid,
+        isVid: !!p.vid,
+        alt: p.set + " — photograph by Shobin Thomas",
+        onClick: () => this.setState({ lb: i }),
+        vidNode: p.vid ? React.createElement("video", {
+          src: p.src, muted: true, loop: true, playsInline: true, autoPlay: true, preload: "auto",
+          "data-keep-sound": "1", onVolumeChange: (e) => { e.currentTarget.muted = true; },
+          style: { width: "100%", height: "auto", display: "block" }
+        }) : null
+      })),
+      lbShow: lb >= 0 ? "flex" : "none",
+      lbNode: lb >= 0 ? React.createElement(shots[lb].vid ? "video" : "img", shots[lb].vid ? {
+        src: shots[lb].src, controls: true, muted: true, loop: true, playsInline: true, autoPlay: true,
+        "data-keep-sound": "1", onVolumeChange: (e) => { e.currentTarget.muted = true; },
+        style: { maxWidth: "100%", maxHeight: "78vh", borderRadius: 10, display: "block" }
+      } : {
+        src: shots[lb].src, alt: shots[lb].set + " — photograph by Shobin Thomas",
+        style: { maxWidth: "100%", maxHeight: "78vh", borderRadius: 10, display: "block", boxShadow: "0 40px 80px -40px rgba(0,0,0,0.8)" }
+      }) : null,
+      lbSrc: lb >= 0 ? shots[lb].src : "",
+      lbIsImg: lb >= 0 && !shots[lb].vid,
+      lbIsVid: lb >= 0 && !!shots[lb].vid,
+      lbLabel: lb >= 0 ? shots[lb].set + " · " + (lb + 1) + " / " + shots.length : "",
+      lbClose: () => this.setState({ lb: -1 }),
+      lbPrev: (e) => { e.stopPropagation(); this.setState({ lb: (lb - 1 + shots.length) % shots.length }); },
+      lbNext: (e) => { e.stopPropagation(); this.setState({ lb: (lb + 1) % shots.length }); },
       grid: books.map((b) => {
         const on = this.state.hover === b.i;
         const h = FOLDER_HUES[b.i % FOLDER_HUES.length];
@@ -1388,11 +1619,15 @@ class Component extends DCLogic {
       ledGlow: "0 0 14px oklch(0.8 0.15 " + curHue + " / 0.6)",
       statusLabel: this.state.playing ? "Now playing" : "Paused",
       trackNo: String(cur + 1).padStart(2, "0") + " / " + String(TRACKS.length).padStart(2, "0"),
-      toggleMute: () => this.setState((s) => {
-        const muted = !s.muted;
-        document.querySelectorAll("audio, video").forEach((el) => { if (el.dataset.keepSound !== "1") el.muted = muted; });
-        return { muted };
-      }),
+      toggleMute: () => {
+        const muted = !this.state.muted;
+        const a = this.audio;
+        if (a) {
+          a.muted = muted;
+          if (!muted && this.state.playing && a.paused) { const p = a.play(); if (p && p.catch) p.catch(() => {}); }
+        }
+        this.setState({ muted });
+      },
       muteLabel: this.state.muted ? "Unmute audio" : "Mute audio",
       mutePath: this.state.muted
         ? "M4 9.4h3.1L11 6v12L7.1 14.6H4zM15.1 9.3l1.3-1.3 2 2 2-2 1.3 1.3-2 2 2 2-1.3 1.3-2-2-2 2-1.3-1.3 2-2z"
@@ -1401,17 +1636,26 @@ class Component extends DCLogic {
       muteFg: this.state.muted ? "rgba(244,244,246,0.42)" : "#e3b183",
       muteBorder: this.state.muted ? "rgba(255,255,255,0.14)" : "rgba(227,177,131,0.4)",
       knobs: [
-        { label: "Prev", path: "M7 6h2.2v12H7zM19 6.6v10.8L10.6 12z", anti: this.state.knob * 40, rot: -this.state.knob * 40, dot: "#e3b183", dotGlow: "rgba(217,160,106,0.8)", onClick: () => this.setState((st) => ({ track: (st.track - 1 + TRACKS.length) % TRACKS.length, playing: true, knob: st.knob + 1 })) },
-        { label: this.state.playing ? "Pause" : "Play", path: this.state.playing ? "M8 5.6h2.9v12.8H8zM13.1 5.6H16v12.8h-2.9z" : "M7 5.4 19 12 7 18.6z", anti: this.state.playing ? -32 : 32, rot: this.state.playing ? 32 : -32, dot: this.state.playing ? "oklch(0.88 0.15 145)" : "rgba(245,245,247,0.7)", dotGlow: this.state.playing ? "oklch(0.8 0.18 145 / 0.85)" : "rgba(255,255,255,0.25)", onClick: () => this.setState((st) => ({ playing: !st.playing })) },
-        { label: "Next", path: "M14.8 6H17v12h-2.2zM5 6.6 13.4 12 5 17.4z", anti: -this.state.knob * 40, rot: this.state.knob * 40, dot: "#e3b183", dotGlow: "rgba(217,160,106,0.8)", onClick: () => this.setState((st) => ({ track: (st.track + 1) % TRACKS.length, playing: true, knob: st.knob + 1 })) }
+        { label: "Prev", path: "M7 6h2.2v12H7zM19 6.6v10.8L10.6 12z", anti: this.state.knob * 40, rot: -this.state.knob * 40, dot: "#e3b183", dotGlow: "rgba(217,160,106,0.8)", onClick: () => this.playTrack(this.state.track - 1) },
+        { label: this.state.playing ? "Pause" : "Play", path: this.state.playing ? "M8 5.6h2.9v12.8H8zM13.1 5.6H16v12.8h-2.9z" : "M7 5.4 19 12 7 18.6z", anti: this.state.playing ? -32 : 32, rot: this.state.playing ? 32 : -32, dot: this.state.playing ? "oklch(0.88 0.15 145)" : "rgba(245,245,247,0.7)", dotGlow: this.state.playing ? "oklch(0.8 0.18 145 / 0.85)" : "rgba(255,255,255,0.25)", onClick: () => { if (this.state.playing) this.pauseTrack(); else this.playTrack(this.state.track); } },
+        { label: "Next", path: "M14.8 6H17v12h-2.2zM5 6.6 13.4 12 5 17.4z", anti: -this.state.knob * 40, rot: this.state.knob * 40, dot: "#e3b183", dotGlow: "rgba(217,160,106,0.8)", onClick: () => this.playTrack(this.state.track + 1) }
       ],
       chips: TRACKS.map((tr, i) => ({
         artist: tr[0],
+        label: tr[1],
+        mark: MARKS[i % MARKS.length],
+        iconOp: i === cur ? 0 : 0.86,
+        eqShow: i === cur ? "flex" : "none",
+        bars: [0, 1, 2, 3],
+        eqRun: this.state.playing ? "running" : "paused",
+        rot: (i - (TRACKS.length - 1) / 2) * 4.2,
+        lift: i === cur ? -6 : 0,
+        z: i === cur ? 20 : 10 - Math.abs(i - cur),
         bg: this.albumBg(i),
         opacity: i === cur ? 1 : 0.42,
         border: i === cur ? "rgba(255,255,255,0.121)" : "rgba(255,255,255,0.14)",
         shadow: i === cur ? "0 10px 18px -10px rgba(0,0,0,0.9), 0 0 0 3px rgba(255,255,255,0.1)" : "0 6px 12px -8px rgba(0,0,0,0.8)",
-        onClick: () => this.setState({ track: i, playing: true })
+        onClick: () => this.playTrack(i)
       })),
       current: {
         artist: TRACKS[cur][0],
@@ -1421,9 +1665,9 @@ class Component extends DCLogic {
       },
       playState: this.state.playing ? "running" : "paused",
       playIcon: this.state.playing ? "❙❙" : "▶",
-      togglePlay: () => this.setState((s) => ({ playing: !s.playing })),
-      nextTrack: () => this.setState((s) => ({ track: (s.track + 1) % TRACKS.length, playing: true })),
-      prevTrack: () => this.setState((s) => ({ track: (s.track - 1 + TRACKS.length) % TRACKS.length, playing: true })),
+      togglePlay: () => { if (this.state.playing) this.pauseTrack(); else this.playTrack(this.state.track); },
+      nextTrack: () => this.playTrack(this.state.track + 1),
+      prevTrack: () => this.playTrack(this.state.track - 1),
       experience: [
         { years: "Dec 2025 — now", role: "Brand and Concept Designer", place: "TIRON · Dubai, UAE", detail: "Graphic design, UI/UX and concept work across brand systems and the products they ship in." },
         { years: "Sep 2023 — Dec 2025", role: "Graphic Designer and Creative Specialist", place: "INOI · Dubai, UAE", detail: "Device and retail campaigns end to end — project management, coordination and production design." },

@@ -13,13 +13,17 @@
 <meta name="description" content="Shobin Thomas is a concept designer in Dubai working across brand identity, product interfaces, generative-AI systems and websites. Brand and Concept Designer at TIRON. Twelve recent projects, live sites and full CV.">
 <meta name="author" content="Shobin Thomas">
 <link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="alternate icon" type="image/png" href="favicon.png">
+<link rel="alternate icon" type="image/png" href="favicon-256.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<link rel="mask-icon" href="favicon.svg" color="#050506">
+<link rel="mask-icon" href="favicon.svg" color="#EB000F">
 <meta name="application-name" content="Shobin Thomas">
 <meta name="apple-mobile-web-app-title" content="Shobin Thomas">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#050506">
+<meta name="theme-color" content="#000000">
+<meta name="keywords" content="concept designer Dubai, brand designer Dubai, UI UX designer Dubai, art direction, generative AI design, Shobin Thomas">
+<meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1">
+<script defer src="/_vercel/insights/script.js"></script>
+<script defer src="/_vercel/speed-insights/script.js"></script>
 <link rel="canonical" href="https://shobin.art/">
 <meta property="og:url" content="https://shobin.art/">
 <meta property="og:image" content="https://shobin.art/uploads/1783704714351~2.jpg">
@@ -38,14 +42,53 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Shobin Thomas","jobTitle":"Concept Designer","url":"https://shobin.art/","image":"https://shobin.art/uploads/1783704714351~2.jpg","description":"Concept designer working across brand identity, product interfaces, generative-AI systems and websites.","email":"mailto:shobint7@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Dubai","addressCountry":"AE"},"worksFor":{"@type":"Organization","name":"TIRON","url":"https://www.tiron.agency"},"knowsAbout":["Brand identity","Graphic design","UI/UX design","Generative AI","Web design"],"sameAs":["https://www.behance.net/shobinthomas1","https://www.linkedin.com/in/shobin-thomas7/","https://www.instagram.com/s7xt98/","https://www.tiron.agency"]}</script>
 <style>
   *, *::before, *::after { box-sizing: border-box; }
+  /* Helvetica's line box sits the caps high inside a centred button — trim to cap height */
+  button, header a, [data-btn] { text-box: trim-both cap alphabetic; }
+  button { display: inline-flex; align-items: center; justify-content: center; }
   html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
   body { margin: 0; overflow-x: hidden; background: #050506; color: #f5f5f7; font-family: "Helvetica Neue LT Pro", "Helvetica Neue", Helvetica, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; }
   a { color: #f5f5f7; text-decoration: none; }
-  a:hover { color: oklch(0.82 0.12 250); }
-  ::selection { background: rgba(245,245,247,0.92); color: #050506; }
+  a:hover { color: #EB000F; }
+  ::selection { background: #EB000F; color: #ffffff; }
+  a, button, [role="button"] { -webkit-tap-highlight-color: transparent; }
+  a:active, button:active, [role="button"]:active { transform: scale(0.972) !important; transition-duration: 0.09s !important; }
+  [data-ch]:active, h1:active { transform: none !important; }
+  :focus-visible { outline: 2px solid rgba(245,245,247,0.85); outline-offset: 3px; }
+  h2 { line-height: 1.04; }
+  h3 { line-height: 1.16; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; animation-delay: 0ms !important; }
+    [data-reveal] { transition: opacity 0.3s linear !important; }
+    [data-reveal="out"] { transform: none !important; }
+  }
+  /* mobile: every backdrop-filter layer costs a full-screen GPU buffer, and the SVG
+     filter version is worse still — the panels keep their translucent fills instead */
+  /* the live-site stack unfans into a swipeable row on phones, scrolling from the left
+     edge so the first card is never clipped */
+  @media (max-width: 760px) {
+    [data-stack] { grid-template-columns: repeat(2, 1fr) !important; }
+    [data-stack] > a:hover { transform: none !important; }
+  }
   [data-rail]::-webkit-scrollbar { height: 0; display: none; }
   [data-rail] { scrollbar-width: none; }
-  [data-reveal] { transition: opacity 0.9s cubic-bezier(0.32,0.72,0,1), transform 1s cubic-bezier(0.32,0.72,0,1); }
+  @keyframes marqueeR { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  header[data-hdr="clear"] > a, header[data-hdr="clear"] > nav { opacity: 0; transform: translateY(-8px); pointer-events: none; }
+  header > a, header > nav { transition: opacity 0.45s cubic-bezier(0.32,0.72,0,1), transform 0.45s cubic-bezier(0.32,0.72,0,1); }
+  @media (max-width: 900px) {
+    #top > img { width: 300% !important; left: -100% !important; bottom: -30vh !important; }
+  }
+  @media (max-width: 760px) {
+    [data-herofoot] { flex-direction: column !important; align-items: flex-start !important; margin-top: auto !important; }
+    [data-herofoot] p { text-align: left !important; }
+  }
+  /* phones: the silhouette can't sit beside the copy — it moves up behind the
+     headline so the type/portrait interlock survives and the cluster runs clear */
+  @media (max-width: 640px) {
+    #top > img { width: 520% !important; left: -210% !important; bottom: -58vh !important; z-index: 1 !important; }
+    #top { min-height: 100vh !important; }
+  }
+  [data-reveal] { transition: opacity 0.5s cubic-bezier(0.32,0.72,0,1), transform 0.55s cubic-bezier(0.32,0.72,0,1); }
   [data-reveal="out"] { opacity: 0; transform: translateY(26px); }
   [data-reveal="in"] { opacity: 1; transform: none; }
   @keyframes sheetIn { from { opacity: 0; transform: translateY(30px) scale(0.985); } to { opacity: 1; transform: none; } }
@@ -57,365 +100,175 @@
   @keyframes sheen { 0% { transform: translateX(-120%) skewX(-18deg); } 60%,100% { transform: translateX(240%) skewX(-18deg); } }
   @keyframes progress { from { width: 6%; } to { width: 100%; } }
   @keyframes marqueeBack { from { transform: translateX(-50%); } to { transform: translateX(0); } }
-  @font-face { font-family: 'Helvetica Neue LT Pro'; src: url('uploads/HelveticaNeueLTProRoman.otf') format('opentype'); font-weight: 400; font-style: normal; font-display: swap; }
-  @font-face { font-family: 'Zalando Sans Expanded'; src: url('uploads/ZalandoSansExpanded-VariableFont_wght.ttf') format('truetype-variations'); font-weight: 200 900; font-style: normal; font-display: swap; }
-  header[data-hdr="glass"]::after { opacity: 1 !important; }
+  @keyframes preS1 { 0%, 26% { opacity: 1; transform: none; } 31%, 100% { opacity: 0; transform: translateY(-14px); } }
+  @keyframes preS2 { 0%, 28% { opacity: 0; transform: translateY(14px); } 34%, 58% { opacity: 1; transform: none; } 64%, 100% { opacity: 0; transform: translateY(-14px); } }
+  @keyframes preS3 { 0%, 60% { opacity: 0; transform: translateY(14px); } 67%, 100% { opacity: 1; transform: none; } }
+  @keyframes preRise { from { transform: translateY(0.92em); opacity: 0; } to { transform: none; opacity: 1; } }
+  @font-face { font-family: 'Helvetica Neue LT Pro'; src: url('fonts/HelveticaNeueLTCom-Roman.ttf') format('truetype'); font-weight: 400; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'Helvetica Neue LT Pro'; src: url('fonts/HelveticaNeueLTCom-Md.ttf') format('truetype'); font-weight: 500 600; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'Helvetica Neue LT Pro'; src: url('fonts/HelveticaNeueLTCom-Bd.ttf') format('truetype'); font-weight: 700 800; font-style: normal; font-display: swap; }
+  @font-face { font-family: 'Helvetica Neue LT Pro'; src: url('fonts/HelveticaNeueLTCom-Blk.ttf') format('truetype'); font-weight: 900; font-style: normal; font-display: swap; }
+  @media (max-width: 700px) { [data-fbar] { grid-template-columns: repeat(2, 1fr) !important; } }
+  @media (max-width: 700px) { [data-hann] { display: none !important; } }
+    header[data-hdr="glass"]::after { opacity: 1 !important; }
+  header::after { -webkit-mask-image: linear-gradient(to bottom, #000 68%, rgba(0,0,0,0)); mask-image: linear-gradient(to bottom, #000 68%, rgba(0,0,0,0)); }
   #top, #shelf, #work, #contact { scroll-margin-top: 86px; }
   @media (max-width: 820px) { #top, #shelf, #work, #contact { scroll-margin-top: 148px !important; } }
   @media (max-width: 820px) {
     header { flex-wrap: wrap !important; gap: 10px !important; padding: 8px 12px !important; }
-    header > nav { order: 3 !important; width: 100% !important; justify-content: space-between !important; font-size: 12px !important; }
+    header > nav { order: 3 !important; width: 100% !important; justify-content: space-between !important; font-size: 13.5px !important; }
     header > nav a { padding: 10px 14px !important; }
-    header > a:last-of-type { padding: 11px 16px !important; font-size: 12px !important; }
-    #top { min-height: 76vh !important; padding: 84px 16px 34px !important; }
+    header > a:last-of-type { padding: 11px 16px !important; font-size: 13.5px !important; }
+    #top { min-height: 100vh !important; padding: 84px 16px 34px !important; }
     section, footer { padding-left: 16px !important; padding-right: 16px !important; }
-    [data-m="shelfrow"] { gap: 22px !important; padding: 0 6px !important; overflow-x: auto !important; }
     [data-m="statement"] { font-size: clamp(23px, 6.4vw, 34px) !important; line-height: 1.14 !important; }
   }
+  /* folders can't fan on a phone — they become a swipeable row of readable cards */
+  @media (max-width: 820px) {
+    [data-m="folders"] { overflow-x: auto !important; gap: 0 !important; padding-right: 40px !important; height: clamp(300px, 52vh, 420px) !important; scroll-snap-type: x mandatory; }
+    [data-m="folders"] > div { flex: 0 0 74% !important; margin-left: -14px !important; padding-top: 0 !important; scroll-snap-align: start; }
+    [data-m="folders"] > div:first-child { margin-left: 0 !important; }
+  }
+  /* portrait reads far too close-up on narrow screens — pull it back */
+  @media (max-width: 820px) {
+    #top > img { left: 50% !important; transform: translateX(-50%); width: auto !important; height: 78vh !important; max-width: none !important; bottom: 0 !important; }
+  }
   @media (max-width: 520px) {
-    header > a:first-of-type { font-size: 13px !important; }
-    #top { min-height: 68vh !important; }
+    #top > img { height: 72vh !important; }
+  }
+  @media (min-width: 900px) { [data-pre-mid] { display: block !important; } }
+  @media (max-width: 520px) {
+    header > a:first-of-type { font-size: 14px !important; }
+    #top { min-height: 100vh !important; }
   }
 </style>
 </helmet>
-  <div ref="{{ preRef }}" data-screen-label="Loading" style="position: fixed; inset: 0; z-index: 300; overflow: hidden; background: #050506; transition: opacity 0.8s cubic-bezier(0.32,0.72,0,1);">
-      <div style="position: absolute; inset: -6% -10%; display: flex; flex-direction: column; justify-content: space-between; gap: clamp(8px, 1.6vh, 22px);">
-        <div style="display: flex; align-items: center; width: max-content; animation: marquee 30s linear infinite; transform: translateX(0px);">
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.92); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.92); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.92); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.92); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.92); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.92); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-        </div>
-        <div style="display: flex; align-items: center; width: max-content; animation: marqueeBack 44s linear infinite; transform: translateX(-12px);">
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.8); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.8); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.8); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.8); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.8); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.8); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-        </div>
-        <div style="display: flex; align-items: center; width: max-content; animation: marquee 26s linear infinite; transform: translateX(6px);">
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.95); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.95); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.95); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.95); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.95); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.95); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-        </div>
-        <div style="display: flex; align-items: center; width: max-content; animation: marqueeBack 38s linear infinite; transform: translateX(-20px);">
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.85); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.85); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.85); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.85); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.85); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.85); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-        </div>
-        <div style="display: flex; align-items: center; width: max-content; animation: marquee 33s linear infinite; transform: translateX(10px);">
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.9); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.9); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.9); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.9); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.9); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.9); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-        </div>
-        <div style="display: flex; align-items: center; width: max-content; animation: marqueeBack 48s linear infinite; transform: translateX(-6px);">
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.78); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.78); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.78); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.78); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.78); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.78); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-        </div>
-        <div style="display: flex; align-items: center; width: max-content; animation: marquee 28s linear infinite; transform: translateX(14px);">
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.93); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.93); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.93); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.93); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.93); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.93); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
+  <div ref="{{ preRef }}" data-screen-label="Loading" style="position: fixed; inset: 0; z-index: 300; overflow: hidden; background: #EB000F; color: #0A0A0A; transition: transform 0.95s cubic-bezier(0.76,0,0.24,1), opacity 0.4s ease 0.55s;">
+    <div style="position: absolute; inset: 0; display: grid; grid-template-rows: auto auto; align-content: end; gap: clamp(10px, 2vh, 22px); padding: clamp(16px, 2.6vw, 34px);">
+
+      <div style="display: flex; align-items: flex-end; justify-content: flex-end; gap: clamp(14px, 2.4vw, 40px);">
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; line-height: 1.32; color: rgba(10,10,10,0.66); white-space: nowrap; padding-bottom: clamp(10px, 2.4vw, 34px);">Loading<br>the work</span>
+        <div style="overflow: clip; overflow-clip-margin: 80px;">
+          <div ref="{{ prePctRef }}" style="font-weight: 700; font-size: clamp(88px, 24vw, 380px); line-height: 0.76; letter-spacing: -0.055em; font-variant-numeric: tabular-nums; color: #0A0A0A; animation: preRise 1s cubic-bezier(0.32,0.72,0,1) both;">00%</div>
         </div>
       </div>
-      <div style="position: absolute; inset: 0; pointer-events: none; backdrop-filter: url(#glass-filter) blur(16px) saturate(1.8); -webkit-backdrop-filter: blur(16px) saturate(1.8); background: linear-gradient(180deg, rgba(5,5,6,0.36), rgba(5,5,6,0.14) 45%, rgba(5,5,6,0.5)); box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.1), inset 0 0 160px 40px rgba(255,255,255,0.05);"></div>
-      <div style="position: absolute; left: 0; right: 0; top: 50%; transform: translateY(-50%); display: flex; align-items: center; width: max-content; animation: marquee 22s linear infinite;">
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.98); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.98); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.98); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.98); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.98); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(16px, 2.4vw, 40px); padding-right: clamp(16px, 2.4vw, 40px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(30px, 5.4vw, 82px); font-variation-settings: 'wght' 300; font-weight: 300; line-height: 1; letter-spacing: -0.012em; color: rgba(245,245,247,0.98); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="" aria-hidden="true" decoding="async" style="height: clamp(20px, 3.6vw, 52px); width: auto; display: block; flex: none; opacity: 0.8;">
-          </div>
-      </div>
-      <div style="position: absolute; left: clamp(20px, 5vw, 64px); right: clamp(20px, 5vw, 64px); bottom: clamp(24px, 5vh, 52px); display: flex; align-items: center; gap: 18px;">
-        <div style="flex: 1; height: 1px; background: rgba(255,255,255,0.14); overflow: hidden;">
-          <div ref="{{ preBarRef }}" style="height: 100%; width: 0%; background: linear-gradient(90deg, rgba(255,255,255,0.25), #fff); will-change: width;"></div>
+
+      <div>
+        <div style="overflow: clip; overflow-clip-margin: 80px;">
+          <div style="font-weight: 700; font-size: clamp(34px, 11.2vw, 214px); line-height: 0.82; letter-spacing: -0.05em; text-transform: uppercase; white-space: nowrap; text-align: center; color: #0A0A0A; animation: preRise 1.1s cubic-bezier(0.32,0.72,0,1) 0.16s both;">’26 / Shobin®</div>
         </div>
-        <span ref="{{ prePctRef }}" style="font-variant-numeric: tabular-nums; font-size: 12px; letter-spacing: 0.14em; color: rgba(245,245,247,0.7); min-width: 5ch; text-align: right;">00%</span>
+        <div style="margin-top: clamp(12px, 2vw, 22px); height: 1px; background: rgba(10,10,10,0.2); overflow: hidden;">
+          <div ref="{{ preBarRef }}" style="height: 100%; width: 0%; background: #0A0A0A; will-change: width;"></div>
+        </div>
       </div>
-  </div>
+    </div>
   </div>
 
-
-<div style="min-height: 100vh; background: #08080a;">
-
-  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; opacity: 0; pointer-events: none;">
-    <defs>
-      <filter id="glass-filter" color-interpolation-filters="sRGB" x="0%" y="0%" width="100%" height="100%">
-        <feImage x="0" y="0" width="100%" height="100%" preserveAspectRatio="none" result="map" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAApQAAAIdCAYAAACDcO0sAAAQAElEQVR4Aey9iZrcOo+k7bdnX3u23u7/Qj0OyUhCEEhRSmVVVhXOc2ACEQGQDLsy+ct8/c8//Pr167cC+G3xD//wD78t/t2/+3e/ffz7f//vf1v8h//wH35b/Mf/+B9/W/yn//Sfflv85//8n3/7+C//5b/8tviv//W//rb4b//tv/22+O///b//9vE//sf/+G3xP//n//zt4x//8R9//6OL//W//tdvi//9v//3bx//5//8n98+/u///b+/Y/y///f/fsf4p3/6p98x/vmf//l3Fv/yL//yuxf/+q//+nsm/u3f/u33Z8TM2aTp3c/wzBdh0UPV0WvV8fdEtf99U+5/Xy2333db/Z8L5f7PjXL7M2Wr/zOn3P482mp/Vv1qf5Zt9X/WldvPgV/t58Sv9nPkV/s5i6v/eYy5/dz2VvsZP7Pq86Fi/ZwsH8qH+jNQfwbqz0D+Z0APyj/e/Mx/f//WW/r97v7R59J+ihknjnQ9PsOvYjN9UfOK+uxM+Zv1RCzTGZZpZ7ler/otpIlhXK2f7UDtXw6UA+XA+zrwox+UH/3boi/q2T3PaGdnRp32UES8V4+04hRZb4Y/g8U94qyPrnWemT2PNDYn00XMazPO88p7oV4fPV3h5UA58PUd+PNfJn5V8DIPvv6fkOdu8JYPSn3BPXettTvOifWqar+eyXqzeviZ2abVLIXVd62aqZidJ62ipz/LZfqrWOz7jPrsnvIx64lYphOmyLSGi1OozkKcRcYXVg6UA6934DMedq+/1c/eYeb39Ds79JYPyu9suL7Iz97vSk+2h+YoMq6HHelHfMbdicVZ71DPnOFIo98LaRTKfQhTeEy5MIXyLMRZZHxh5cAXc+DtjjvzmPCat7tAHehDHPB/Biz/kI0/YJMv96DUl+IrfXn1fJ39yh7qsdCMmTC9rTM9XqM+X8d8xGfcnVic9Y710ZnkZ9SMsJ42w22OOIXqinKgHHjeAXsExPX5yd9zQvTpO9bP/s5FT56d91n9X+5B+RlGnf1CPqs/eyfNn4mzc02/zD74P1iSxvRxzbgMi32qM13Evlqd3Ut3UIizUK2wWqtqhXIfwhQes1y4wupay4Fy4JoD8Yte9bVJ79Gl8390vMfNX3uKWU9nTxHnzfZ9tq4elE/8Djzzpf1M7xNHPmydOddIk3EZpoNEPNYzmtjzjvXRmbJ7jrA4T1qFcIXyinKgHLjugH2hX5/w2k47n62z62tPVdOPHOj9Pp3pO9J+Jl8Pyhe5P/PFPqN50fF2Y3UWxY4IwEiTcRmmkRGP9Ywm61GfReQ/u9a5sjNcxTRPoX6F8opyoBy45oD/sr824Z4uf45efs9OX2tKz4vPwO92Lt5hNN9rR7rP4H78g/Kzv4g/e3/9oZs5gzQK6WMIV2R4xFRnWuE+oibWXmv5SBO5c/WvX3foj2boHlHTwwzP9OIqyoFyYN4BfUnPq+9Ras8s7pl+75TsnB+N3Xuj56ZdufuZHf38UZ/pRpqP5A4flPWFtf529Hzo4eoaceItZnWmv2vVvoqjeSNNjzuDR+1RrfMeaTzv87O9r9JnZ5rB7DxRK7yiHCgHzjugL+XzXec7tI+P8xOe7/D7n8mf3/kDJ7zpVj2/j47r+3raGU2v90788EH57Gav/uJ7xfxXzDzy8SP31F6KozOJH+l63Bk8amOtM8SImqPa9x9pP5rX2eKeIyzTSl9RDpQD5x3QF/H5rrkOzfYx13Vd5ffq5denV+erHIi/V6N9vLanM02PfyX+8gfl7OE/6ovyo/axe5/Z74zW5p9ZNV8x2zPS9rgzeNTGWueM2DP1M73xLJqlEK5QrlCuUK5QbpHVVzGb+QlrbVkOfAsH9MV790U00+Lu2TbP5sfV+M9a43mqbv8v8pz5PYm+9Xq9LtMYn3Gvwt7mQTm6YPzSPaM90zuaK643q4er52xoluJs30iveYqRxnPSKjzm8x53Bo/aWGu/iD1TP9vr+30+e86ZnqjJZgurKAfKgecc0JftcxO23Zqn2KLPV5oZ4/mpxxPinjP18dSfq+j5N+OI7+3pTbPnf/0acb9u/id9UGZfbDfv+1bjXn3fK/PVo7hqlHotzsxQz0jf48/gURtr7R+xZ+rP6u3d4+g81hd1wivKgXLgfRy4+8va5tn6ipva7NH6in1r5t6B7Pdgr2qI1ze0ZcY3pGUjrqmey9IH5XMj9/8Xsc/O+4z+s1/mR/ojvndH9V2J3rwebnv0eOHSaI1xBo/aWGt2xJ6tNdPizKwzWs0/q+/1xDnSVbynA3Wqr+eAvlifPbVmKO6ao1mKZ+dZv2b1wjQfvfbO853xKx57P0b9I90MN5p9lXs8KD/jS+wz9rxqlPU9c+Znem3/V6xH5xKvyPY+g0dtrDU/YnfWZ2ad0V4999EemltRDpQD7+WAvqyfOZH6LZ6ZY702y6/GvWL1+5zJX3GWd5858mfm7LG/12O6jO9xwjP9M9jjQfnMEPXGL0dhz0c+4dm9nu3PTzX3N7Ov2rt3phGusyiOND2+15vhGRbnRs2d9ZlZZ7S6wx36OENzK8qBcuB9HNAXsOLqidSruNpvfZrhw/A7Vj+3l9+xT8349fjfNnqffx38c6Q1PhuTcRmW9c5itz0oZzec1Z35gj3SHvE6U6bJsJ5WuKLXI85iRmPaV6zaX3E0e6TpcRk+g0XNnfWZWWe1Xq9cYb4qV1it9aiWpqIc+JIOfOND64v36vXUq3i2XzMUV+f4Ps3Jwms+Ms/O8tWxK/7FO49mmDbTHHGxZ6SP2lH91IMyfjmONjLuSo/1zq4fscfsWXo6nVHR41+Baz/F0WxpFD1dxglTxJ4ZLGrurM/MepVWnmi2QrlFrA2vtRwoB76+A898SVuv1med0IwYz87M+uMeZ+ps3lfHRvefvZuf0esZaYyLvWfx2N+rn3pQ9oa+Ar/7y3d2Xk/Xw3X3ESfexwmtbzuVaw/FTNNIJ04R52SYNBkesVfWZ2aPtOIUupPC51frOENzKsqBcuD9HNCX79lTXenRHupTKL8S6o1xZU7siTOzOvZU3Xfgin++pzfZNJG/gscZM/XpB+WVL8LZnlldzMWuaO7c/8wsaRVXztzr0TyLnsbjR1rxXm/5LC6dwvq0vrI+M3ukHXF33EEzKsqBcuA9HdAX8ZmTSa/49etM16/H/57u14V/tJ/FhfZNi82J60b0CUU8zzvXV+2JdxrN8dpMZ3zkzuA9bZzp66kHZfxS9QM+Kz97prN6f69ebw+33iPedLZK78PwmdX3KZ/pMc2RvsdnuDCFzdYa6wyLmmfqM70j7YiLd5BWIVyhXKFcoVyhvKIcKAe+nwP6Aj57K/UorvZd6bW91BvDuDvXuMeV+s7zvHrWzP1mzhDn9HpMl/E9boTHOdJGrFdPPSh7zSN89stzpBtxce+ojXXUq840GSZtL470R3xvrnD1zob0Z8Nm9/pGvLjYdxWLfTO139vrfS7NqL7KxbmjOVGruqIcKAfe34EzX6RntLq59ArlsyG9xWyP6azPr8Y9s/p5vfyZ+d+1N/Pq6K6+J9OOeONiX4bPYnGW6u6DMn5JSvyT4xk/nul9hec6j2I0e8Rn3FUs9j1Tn+kdaY84z/tcfh7V0lSUA+XA93FAX8BnbnNFf7ZH55GOhWqrYTOydXLmh8iy830UdscF41lHM7020xkfuTN4ps0wv8fmQRm/DL1wJp/tn9XFPa/22ZysfxazGdmazYg6aRQR/8ha+ytGe4pXZBrhishdxWLfM/WZ3pH2KidPRr3iK8qBcuDnOnD0ZRydOatXv/VoVX021Bfj7IxZfdzn2Xp231foZs9+Zm8/c9RnukzT40Z4nCPtDCbN5kEp4GzEL9Gz/VF/Zl7UHtVxr7N1nO/7R1zUzWp939Vce1kczZCup+lxGT6DRc0z9ZnekfYZzvcqV/S8vB2vgeVAOXCrA9mXaLbB3TrtoZkK5TMhrcWM3musz1bPXc1t1tF6df5X7ut5cnQn39fTmibje1yGP4NdelBe+bIc9VxlMuOOsGyvWUyzM61wxYgT70NahcfuzDVbMTNTOkVP2+MyfAaLmmfqM70jreeUK8wPnwvztc8jp7qiHCgHvqcD+uKdud0Z3axW+0qrUD4b0vuY7Ys6PyPmUVv11oGsOuOh1x7Nirz1zuCZtofZvOkHZfzitAGj9UrPaJ64szPP6rXHUYxmilMczTBeWgvDrqw2w9aZGUfaHj/C477SeuzO+swsr1WusHP1cvGRi7U0Fp4zrNZyoBz4uQ7oC3jm9rM6zZJWoXwmpLWY0UeN9fo1au6q/R7fLT/jUbx7r9frMo3xkRvhmfYIs3nDB+WVL8jZnpFuxMWLRW2so151ppnF1K/I9MItjnjT+VU9V8PPOcptj5FOmozPcGEKr1etiNhd9ZnZXutzncXXPj/DRa3qis9yoPYtB8YOxJ/zsTpn9QWaMw2d0Uh9Rjertbln9OpRqMeHsGfDzxvlz+7zzv29e8+c2ff29KbJ+B6X4c9guwfllR+22Z5ZXTTkap/NeaZ/1DvitLd4hfJ3CJ1FMTqLeEWmyfCrWOw7U4+04hR2/l4u/i7Oz9HcinKgHCgHZhzQl/eRThrFkU68dBaqZ8L0ts70ZBrrz9ZMX9jqwFm/vH6dsP11xBu37fiV/v9YP9P2sF9//9k9KP/i3cWIu79Ez8yL2qPazuzX2CMuw0b4ESde0Zsr7iNC+ytGe4lXZBrhishdxWLfmXqk/Wwu+lN1OVAO/EwH9MV7dPO7NNpHsxTKZ0Jaixl91FivX6Pm7trv9ZXyKz74+436j3TGxxkjPNMeYTbv1IMyfmHHTbJ61HOVy/Y5wkZ7+d6eroerd8SJV0hjofrVYXtpPdprpOlxGR4x1Qq//zP1qPfVnOYr7C4+N6zWcuDNHKjjfIID+nI92vZOzcwsO4+0CqtnV/X4mO0b6fy8mXw065250d1mzh37ez2my/gel+HPYIcPyitfnFd6MhM8Fmeerf0sy+OMq7j6erPExZDWInJXa5tn68yckbbHjXC/p3S+Vh6xM/VIewenGQqdU9HLI6e6ohwoB76WA/7n++zJ9YV7tsfrj/rFK3xPls9o1CedheqZML2tMz2Zxvo/W2fzn8ZG++9xn/W9zvhs/wwXazlz1V+Zm+FnMPUf3etIx2f6oxvfP1AAAAAASUVORK5CYII=" />
-        <feDisplacementMap in="SourceGraphic" in2="map" result="dispRed" scale="-20" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
-        <feColorMatrix in="dispRed" type="matrix" values="1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0" result="red"></feColorMatrix>
-        <feDisplacementMap in="SourceGraphic" in2="map" result="dispGreen" scale="-24" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
-        <feColorMatrix in="dispGreen" type="matrix" values="0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 0" result="green"></feColorMatrix>
-        <feDisplacementMap in="SourceGraphic" in2="map" result="dispBlue" scale="-28" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
-        <feColorMatrix in="dispBlue" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0" result="blue"></feColorMatrix>
-        <feBlend in="red" in2="green" mode="screen" result="rg"></feBlend>
-        <feBlend in="rg" in2="blue" mode="screen" result="output"></feBlend>
-        <feGaussianBlur in="output" stdDeviation="1.4"></feGaussianBlur>
-      </filter>
-    </defs>
-  </svg>
-
-  <header ref="{{ headerRef }}" style="position: fixed; top: 0; left: 0; right: 0; z-index: 60; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 9px clamp(14px, 4vw, 28px); background: transparent; border-bottom: 1px solid transparent; transition: background 0.5s ease, border-color 0.5s ease;" style-after="content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; transition: opacity 0.5s ease; backdrop-filter: url(#glass-filter) blur(14px) saturate(1.6); -webkit-backdrop-filter: url(#glass-filter) blur(14px) saturate(1.6); box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.077), inset 0 0 10px 4px rgba(255,255,255,0.16), inset 0 8px 24px rgba(17,17,26,0.05);">
-    <a href="#top" style="display: flex; align-items: center; gap: 10px; font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-variation-settings: 'wght' 300; font-size: 15px; letter-spacing: -0.004em; font-weight: 300;">
-      <span style="width: 28px; height: 28px; border-radius: 999px; overflow: hidden; flex: none; box-shadow: 0 1px 0 rgba(255,255,255,0.154) inset, 0 4px 10px -5px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.132); background: #1d1d1f;"><img src="uploads/1783704714351~2.jpg" alt="Shobin Thomas" style="width: 100%; height: 100%; object-fit: cover; display: block;"></span>
+  <header role="banner" ref="{{ headerRef }}" style="position: fixed; top: 0; left: 0; right: 0; z-index: 60; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 9px clamp(14px, 4vw, 28px); background: transparent; border-bottom: 1px solid transparent; transition: background 0.5s ease, border-color 0.5s ease;" style-after="content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0; transition: opacity 0.5s ease; box-shadow: inset 0 8px 24px rgba(17,17,26,0.05);">
+    <a href="#top" style="display: flex; align-items: center; gap: 10px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; letter-spacing: -0.004em; font-weight: 700; letter-spacing: -0.01em; color: #ffffff;">
+      
       Shobin Thomas
     </a>
-    <nav style="display: flex; align-items: center; gap: 4px; padding: 4px; border-radius: 999px; background: rgba(255,255,255,0.075); border: 1px solid rgba(255,255,255,0.132); box-shadow: 0 1px 0 rgba(255,255,255,0.17) inset; font-size: 12.5px;">
-      <a href="#shelf" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 12px 17px; border-radius: 999px; color: rgba(245,245,247,0.72); transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="background: #f5f5f7; color: #08080a; box-shadow: 0 1px 0 rgba(255,255,255,0.24) inset, 0 6px 14px -6px rgba(0,0,0,0.5);">Shelf</a>
-      <a href="#work" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 12px 17px; border-radius: 999px; color: rgba(245,245,247,0.72); transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="background: #f5f5f7; color: #08080a; box-shadow: 0 1px 0 rgba(255,255,255,0.24) inset, 0 6px 14px -6px rgba(0,0,0,0.5);">Gallery</a>
-      <a href="#contact" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 12px 17px; border-radius: 999px; color: rgba(245,245,247,0.72); transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="background: #f5f5f7; color: #08080a; box-shadow: 0 1px 0 rgba(255,255,255,0.24) inset, 0 6px 14px -6px rgba(0,0,0,0.5);">Contact</a>
-    </nav>
-    <a href="https://www.tiron.agency" target="_blank" rel="noopener" style="position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 15px 24px; border-radius: 999px; font-size: 13px; color: #050506; background: linear-gradient(155deg, #ffffff, #e8e8ee), #ffffff; border: 1px solid rgba(255,255,255,0.22); box-shadow: 0 1px 0 rgba(255,255,255,0.088) inset, 0 10px 22px -12px rgba(0,0,0,0.6); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-1px); color: #050506;" style-before="content: ''; position: absolute; top: 0; bottom: 0; width: 40%; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.14), transparent); animation: sheen 4.5s ease-in-out infinite;">Contact TIRON Agency</a>
+    <a href="https://www.tiron.agency" target="_blank" rel="noopener" style="position: relative; overflow: hidden; display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 15px 24px; border-radius: 999px; font-size: 13px; color: #ffffff; background: #0A0A0A; border: 1px solid #EB000F; box-shadow: 0 1px 0 rgba(255,255,255,0.088) inset, 0 10px 22px -12px rgba(0,0,0,0.6); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-1px); color: #EB000F;" style-before="content: ''; position: absolute; top: 0; bottom: 0; width: 40%; background: linear-gradient(90deg, transparent, rgba(0,0,0,0.14), transparent); animation: sheen 4.5s ease-in-out infinite;">Contact TIRON Agency</a>
   </header>
 
-  <section id="top" data-screen-label="Hero" style="position: relative; overflow: hidden; display: flex; align-items: flex-end; min-height: clamp(620px, 100vh, 1080px); padding: clamp(70px, 13vh, 150px) clamp(20px, 4vw, 56px) clamp(30px, 5vh, 60px);">
-    <div aria-hidden="true" style="position: absolute; inset: 0; pointer-events: none;">
-      <video src="uploads/magnific_static-lockedoff-camera.-_LwlhaMcswO.mp4" data-keep-sound="1" ref="{{ heroVideoRef }}" autoPlay="{{ true }}" loop="{{ true }}" muted="{{ true }}" playsInline="{{ true }}" preload="auto" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 18%; opacity: 0.62; filter: saturate(0.85) contrast(1.05);"></video>
-      <img src="uploads/Frame 3-ST-N.png" alt="Shobin Thomas" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 18%; display: block;">
-      <div style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,5,6,0.92) 0%, rgba(5,5,6,0.55) 34%, rgba(5,5,6,0.25) 62%, rgba(5,5,6,0.6) 100%);"></div>
-      <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,5,6,0.5) 0%, rgba(5,5,6,0.12) 18%, rgba(5,5,6,0.1) 70%, #050506 100%);"></div>
+  <section id="top" role="main" data-screen-label="Hero" style="position: relative; overflow: hidden; min-height: 100vh; display: flex; flex-direction: column; justify-content: flex-start; gap: 0; background: #000000; padding: clamp(40px, 5.4vh, 72px) clamp(16px, 2.6vw, 40px) clamp(20px, 3.4vh, 44px);">
+
+    <img src="uploads/Frame 3-ST-N.png" alt="Shobin Thomas" width="3656" height="1952" fetchpriority="high" decoding="async" style="position: absolute; left: -10%; width: 118%; bottom: -27vh; height: auto; object-fit: contain; object-position: bottom center; pointer-events: none; z-index: 3;">
+
+    <div style="position: relative; z-index: 4; display: flex; justify-content: flex-end; margin-bottom: clamp(26px, 5vh, 72px); margin-right: clamp(-8px, -0.6vw, 0px); font-weight: 700; text-transform: uppercase; color: #ffffff; font-size: clamp(13px, 1.15vw, 20px); letter-spacing: 0; line-height: 1.2;">I’m a concept designer</div>
+
+    <div ref="{{ heroFitRef }}" style="width: calc(100vw + 2 * clamp(10px, 2.4vw, 52px)); margin-left: calc(50% - 50vw - clamp(10px, 2.4vw, 52px)); position: relative; z-index: 2; margin-top: 0;">
+      <h1 ref="{{ heroRef }}" style="margin: 0; font-weight: 700; text-transform: uppercase; letter-spacing: -0.045em; line-height: 0.82; color: #EB000F; cursor: default;">
+        <span style="position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;">Shobin Thomas — concept designer in Dubai: brand identity, product interfaces, film and generative AI.</span>
+        <span aria-hidden="true" data-fit="1.0" style="display: block; white-space: nowrap; text-align: left; margin-left: 0; font-size: clamp(56px, 15.2vw, 560px);"><sc-for list="{{ heroA }}" as="ch" hint-placeholder-count="7"><span data-ch="1" style="display: inline-block; transform-origin: 50% 92%; transition: color 0.4s ease, text-shadow 0.4s ease;">{{ ch.c }}</span></sc-for></span>
+      </h1>
     </div>
 
-    <div ref="{{ heroFitRef }}" style="position: relative; width: 100%; max-width: none;">
-      <h1 data-reveal="" ref="{{ heroRef }}" aria-label="Shobin Thomas — Concept Designer" style="margin: 0; font-family: 'Zalando Sans Expanded', 'Helvetica Neue', sans-serif; font-variation-settings: 'wght' 300; font-size: clamp(46px, 11.4vw, 208px); line-height: 0.94; letter-spacing: -0.03em; font-weight: 300; color: #ffffff; mix-blend-mode: difference; cursor: default;">
-<sc-for list="{{ heroWords }}" as="w" hint-placeholder-count="4"><span aria-hidden="true" style="display: block; white-space: nowrap;"><sc-for list="{{ w.chars }}" as="ch" hint-placeholder-count="7"><span data-ch="1" style="display: inline-block; transform-origin: 50% 92%; transition: color 0.4s ease, text-shadow 0.4s ease;">{{ ch.c }}</span></sc-for></span></sc-for></h1>
+    <div data-herofoot="" style="position: relative; z-index: 4; margin-top: clamp(14px, 2.6vh, 34px); display: flex; align-items: flex-start; justify-content: space-between; gap: clamp(20px, 4vw, 80px); font-weight: 700; text-transform: uppercase; color: #ffffff; font-size: clamp(13px, 1.15vw, 20px); line-height: 1.32; letter-spacing: 0;">
+      <div style="display: flex; gap: clamp(28px, 5vw, 96px);">
+        <span>Brand<br>Art direction<br>Interfaces</span>
+        <span>Product<br>Film<br>Generative AI</span>
+      </div>
+      <p style="margin: 0; max-width: none; white-space: nowrap; text-align: right;">Identities, interfaces and films<br>that behave like objects.</p>
     </div>
   </section>
 
+  <div data-reveal="" aria-hidden="true" style="position: relative; z-index: 2; overflow: hidden; background: #050506; padding: clamp(14px, 2vh, 26px) 0;">
+    <div data-marquee="" style="display: flex; width: max-content; gap: clamp(44px, 6vw, 110px); white-space: nowrap; font-weight: 700; text-transform: uppercase; letter-spacing: -0.02em; font-size: clamp(42px, 4.4vw, 70px); color: #f5f5f7; animation: marquee 26s linear infinite;">
+      <span>Design is what I do, and I do it well.</span>
+      <span>Make it obvious, then make it beautiful.</span>
+      <span>Craft is a habit, not a mood.</span>
+      <span>Ship the idea, not the excuse.</span>
+      <span>Design is what I do, and I do it well.</span>
+      <span>Make it obvious, then make it beautiful.</span>
+      <span>Craft is a habit, not a mood.</span>
+      <span>Ship the idea, not the excuse.</span>
+    </div>
+  </div>
+
   <section data-screen-label="Statement" style="padding: clamp(56px, 11vh, 130px) clamp(20px, 4vw, 56px) clamp(40px, 7vh, 90px);">
     <div style="max-width: 1560px; margin: 0 auto;">
-      <div data-reveal="" style="font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(245,245,247,0.42); margin-bottom: clamp(26px, 4vh, 52px);">Behind the work</div>
-      <p data-reveal="" data-m="statement" style="margin: 0; font-size: clamp(26px, 4.3vw, 76px); line-height: 1.08; letter-spacing: -0.026em; color: #f5f5f7; text-wrap: pretty;">Shobin is a Dubai-based concept designer working across brand identity, product interfaces and generative-AI systems. He also shoots, directs and cuts the edit himself. Currently at <a href="https://www.tiron.agency" target="_blank" rel="noopener" style="color: #f5f5f7; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.24); padding-bottom: 2px;">TIRON Agency</a>, Dubai, where most of this work was made.</p>
+      <div data-reveal="" style="font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F; margin-bottom: clamp(26px, 4vh, 52px);">Behind the work</div>
+      <p data-reveal="" data-m="statement" style="margin: 0; font-size: clamp(26px, 4.3vw, 76px); line-height: 1.08; letter-spacing: -0.014em; color: #f5f5f7; text-wrap: pretty;">Shobin is a Dubai-based concept designer working across brand identity, product interfaces and generative-AI systems. He also shoots, directs and cuts the edit himself. Currently at <a href="https://www.tiron.agency" target="_blank" rel="noopener" style="color: #f5f5f7; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.24); padding-bottom: 2px;">TIRON Agency</a>, Dubai, where most of this work was made.</p>
     </div>
   </section>
 
   <section id="shelf" data-screen-label="Shelf" style="padding: clamp(20px, 4vh, 44px) clamp(14px, 3vw, 40px) clamp(60px, 10vh, 110px);">
     <div style="display: flex; flex-wrap: wrap; gap: 18px; max-width: 1560px; margin: 0 auto; align-items: stretch;">
 
-      <div data-reveal="" style="display: flex; flex-direction: column; justify-content: space-between; position: relative; flex: 1 1 640px; min-width: 0; border-radius: 28px; padding: clamp(18px, 2vw, 26px) 0 clamp(20px, 2vw, 28px); background: rgba(255,255,255,0.075); border: 1px solid rgba(255,255,255,0.154); box-shadow: 0 40px 70px -40px rgba(0,0,0,0.32);" style-after="content: ''; position: absolute; inset: 0; z-index: -1; border-radius: 32px; backdrop-filter: blur(16px) saturate(1.5); -webkit-backdrop-filter: blur(16px) saturate(1.5); box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.077), inset 0 0 10px 4px rgba(255,255,255,0.16), inset 0 8px 24px rgba(17,17,26,0.05);">
+      <div data-reveal="" style="display: flex; flex-direction: column; justify-content: space-between; position: relative; flex: 1 1 640px; min-width: 0; border-radius: 28px; padding: clamp(18px, 2vw, 26px) 0 clamp(20px, 2vw, 28px); border: 1px solid rgba(255,255,255,0.154); box-shadow: 0 40px 70px -40px rgba(0,0,0,0.32); background-color: #0A0A0A; border-color: #FFFFFF; border-width: 0.3px" style-after="content: ''; position: absolute; inset: 0; z-index: -1; border-radius: 32px; box-shadow: inset 0 8px 24px rgba(17,17,26,0.05);">
         <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding: 0 clamp(20px, 2.4vw, 34px) 2px;">
           <div>
-            <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,245,247,0.44); margin-bottom: 8px;">The archive</div>
-            <h2 style="margin: 0; font-size: clamp(21px, 2.1vw, 27px); letter-spacing: -0.026em; font-weight: 600;">Twelve projects, on two shelves</h2>
+            <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F; margin-bottom: 8px;">The archive</div>
+            <h2 style="margin: 0; font-size: clamp(21px, 2.1vw, 27px); letter-spacing: -0.014em; font-weight: 600;">Twelve projects, on two shelves</h2>
           </div>
-          <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.4);">{{ shelfCount }}</div>
+          <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F;">{{ shelfCount }}</div>
         </div>
 
         <div style="display: flex; gap: 8px; flex-wrap: wrap; padding: 16px clamp(20px, 2.4vw, 34px) 0;">
           <sc-for list="{{ tabs }}" as="t" hint-placeholder-count="4">
-            <button type="button" onClick="{{ t.onClick }}" style="position: relative; display: inline-flex; align-items: center; gap: 7px; border: 1px solid {{ t.border }}; background: {{ t.bg }}; color: {{ t.fg }}; padding: 7px 13px; border-radius: 999px; font: inherit; font-size: 12px; font-weight: 400; letter-spacing: -0.004em; cursor: pointer; box-shadow: {{ t.shadow }}; transition: transform 0.45s cubic-bezier(0.32,0.72,0,1), background 0.4s ease, color 0.4s ease;" style-hover="transform: translateY(-2px);">
+            <button type="button" onClick="{{ t.onClick }}" style="position: relative; display: inline-flex; align-items: center; gap: 7px; border: 1px solid {{ t.border }}; background: #0A0A0A; color: #FFFFFF; padding: 13px 22px; border-radius: 999px; font: inherit; font-size: 13.5px; letter-spacing: -0.004em; cursor: pointer; transition: transform 0.45s cubic-bezier(0.32,0.72,0,1), color 0.4s ease, border-color 0.4s ease; border-color: #EB000F; justify-content: flex-start" style-hover="transform: translateY(-2px);">
               <span style="width: 6px; height: 6px; border-radius: 999px; background: {{ t.dot }};"></span>{{ t.name }}
-              <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9.5px; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.55;">{{ t.count }} vol</span>
+              <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; opacity: 0.55;">{{ t.count }} vol</span>
             </button>
           </sc-for>
         </div>
 
-        <sc-for list="{{ rows }}" as="row" hint-placeholder-count="2" style="display: contents;">
-          <div style="padding: 20px clamp(20px, 2.4vw, 34px) 0;">
-            <div style="position: relative;">
-              <div data-m="shelfrow" style="position: relative; z-index: 2; display: flex; align-items: flex-end; gap: clamp(46px, 6vw, 96px); padding: 0 34px; min-height: 140px;">
-                <sc-for list="{{ row.items }}" as="b" hint-placeholder-count="3">
-                  <div onClick="{{ b.onClick }}" onMouseEnter="{{ b.onEnter }}" onMouseLeave="{{ b.onLeave }}" style="position: relative; flex: none; cursor: pointer; transform: translateY({{ b.lift }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);">
-                    <div style="position: absolute; left: 72px; top: 18px; width: 90px; height: 90px; border-radius: 999px; background: radial-gradient(circle at 50% 50%, #26262a 0 13%, #0b0b0d 14% 15%, #191a1d 16% 100%); box-shadow: 0 10px 18px -10px rgba(0,0,0,0.6); transform: translateX({{ b.discX }}px) rotate({{ b.discR }}deg); transition: transform 0.9s cubic-bezier(0.32,0.72,0,1);">
-                      <div style="position: absolute; inset: 0; border-radius: 999px; background: repeating-radial-gradient(circle at 50% 50%, rgba(255,255,255,0.055) 0 1px, rgba(0,0,0,0) 1px 3px);"></div>
-                      <div style="position: absolute; inset: 0; border-radius: 999px; background: conic-gradient(from 210deg, rgba(255,255,255,0.16), rgba(255,255,255,0) 28%, rgba(255,255,255,0.1) 52%, rgba(255,255,255,0) 78%);"></div>
-                      <div style="position: absolute; left: 50%; top: 50%; width: 25px; height: 25px; margin: -12.5px 0 0 -12.5px; border-radius: 999px; background: {{ b.color }};"></div>
-                    </div>
-                    <div style="position: relative; width: 126px; height: 126px; border-radius: 4px; overflow: hidden; background: {{ b.thumb }}; border: 1px solid rgba(255,255,255,0.121); box-shadow: 0 16px 26px -16px rgba(0,0,0,0.55), 0 1px 2px rgba(0,0,0,0.16);">
-                      <div style="position: absolute; inset: 0; background: linear-gradient(148deg, rgba(255,255,255,0.11), rgba(255,255,255,0) 46%);"></div>
-                      <div style="position: absolute; left: 0; top: 0; bottom: 0; width: 4px; background: linear-gradient(90deg, rgba(0,0,0,0.16), rgba(0,0,0,0));"></div>
-                      <img src="{{ b.cover }}" alt="{{ b.title }}" loading="lazy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block;">
+        <div style="padding: 22px clamp(20px, 2.4vw, 34px) 0;">
+          <div data-m="folders" style="display: flex; align-items: stretch; gap: 0; padding-right: 34px; height: clamp(320px, 44vh, 470px);">
+            <sc-for list="{{ archiveFolders }}" as="fold" hint-placeholder-count="6">
+              <div onClick="{{ fold.onClick }}" role="button" tabIndex="{{ 0 }}" onKeyDown="{{ keyAct }}" onMouseEnter="{{ fold.onEnter }}" onMouseLeave="{{ fold.onLeave }}" aria-label="{{ fold.title }}" style="position: relative; flex: {{ fold.flex }}; min-width: 0; cursor: pointer; margin-left: {{ fold.overlap }}px; padding-top: {{ fold.drop }}px; z-index: {{ fold.z }}; transition: flex 0.7s cubic-bezier(0.32,0.72,0,1), padding-top 0.7s cubic-bezier(0.32,0.72,0,1);">
+                <div style="position: relative; height: 100%; background: {{ fold.stock }}; padding: 7px 7px 7px 9px; box-shadow: -22px 0 40px -20px rgba(0,0,0,0.92);">
+                  <div style="position: absolute; right: -30px; top: {{ fold.tabTop }}px; width: 30px; height: 104px; background: {{ fold.stock }}; clip-path: polygon(0 0, 100% 22%, 100% 78%, 0 100%); display: flex; align-items: center; justify-content: center;">
+                    <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 0.06em; color: {{ fold.tabFg }}; writing-mode: vertical-rl; transform: rotate(180deg);">{{ fold.no }}</span>
+                  </div>
+                  <div style="position: relative; height: 100%; overflow: hidden; background: #0b0b0e;">
+                    <img src="{{ fold.cover }}" alt="{{ fold.title }}" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; filter: {{ fold.filter }}; transform: scale({{ fold.zoom }}); transition: filter 0.6s ease, transform 0.9s cubic-bezier(0.32,0.72,0,1);">
+                    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,5,6,0.35) 0%, rgba(5,5,6,0) 34%, rgba(5,5,6,0.88) 100%);"></div>
+                    <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 12px; display: flex; flex-direction: column; gap: 5px; opacity: {{ fold.metaOpacity }}; transition: opacity 0.5s ease;">
+                      <span style="font-size: clamp(13px, 1vw, 16px); letter-spacing: -0.014em; color: #f5f5f7; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ fold.title }}</span>
+                      <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ fold.category }} · {{ fold.year }}</span>
                     </div>
                   </div>
-                </sc-for>
+                </div>
               </div>
-
-              <div style="position: relative; z-index: 3; margin-top: -20px; height: 30px; border-radius: 5px 5px 11px 11px; background: linear-gradient(180deg, rgba(255,255,255,0.13) 0%, {{ row.tint }} 52%, rgba(255,255,255,0.07) 100%); border: 1px solid {{ row.edge }}; box-shadow: 0 12px 16px -14px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.17), inset 0 -1px 0 rgba(255,255,255,0.154);" style-after="content: ''; position: absolute; inset: 0; z-index: -1; border-radius: 11px; backdrop-filter: blur(2.5px) saturate(1.4); -webkit-backdrop-filter: blur(2.5px) saturate(1.4); box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.11), inset 0 0 10px 4px rgba(255,255,255,0.22);">
-                <div style="position: absolute; left: 12px; top: -6px; width: 11px; height: 11px; border-radius: 999px; background: radial-gradient(circle at 34% 30%, #dcdce2, #6d6d76 52%, #3a3a41); box-shadow: 0 2px 4px rgba(0,0,0,0.28);"></div>
-                <div style="position: absolute; right: 12px; top: -6px; width: 11px; height: 11px; border-radius: 999px; background: radial-gradient(circle at 34% 30%, #dcdce2, #6d6d76 52%, #3a3a41); box-shadow: 0 2px 4px rgba(0,0,0,0.28);"></div>
-                <div style="position: absolute; left: 0; right: 0; bottom: 4px; height: 1px; background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.17), rgba(255,255,255,0));"></div>
-              </div>
-              <div style="height: {{ reflectionH }}px; background: linear-gradient(180deg, rgba(0,0,0,0.05), rgba(0,0,0,0));"></div>
-            </div>
+            </sc-for>
           </div>
-        </sc-for>
+        </div>
 
         <sc-if value="{{ open }}" hint-placeholder-val="{{ true }}">
           <div style="padding: 16px clamp(20px, 2.4vw, 34px) 0;">
-          <div style="position: relative; border-radius: 20px; border: 1px solid rgba(255,255,255,0.165); background: rgba(255,255,255,0.088); box-shadow: 0 26px 54px -32px rgba(0,0,0,0.34); padding: 18px 20px; opacity: {{ previewOpacity }}; transform: translateY({{ previewY }}px); transition: opacity 0.5s ease, transform 0.66s cubic-bezier(0.32,0.72,0,1); pointer-events: {{ previewEvents }};" style-after="content: ''; position: absolute; inset: 0; z-index: -1; border-radius: 22px; backdrop-filter: blur(12px) saturate(1.6); -webkit-backdrop-filter: blur(12px) saturate(1.6); box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.088), inset 0 0 10px 4px rgba(255,255,255,0.2);">
+          <div style="position: relative; border-radius: 20px; border: 1px solid rgba(255,255,255,0.165); background: #101014; box-shadow: 0 26px 54px -32px rgba(0,0,0,0.34); padding: 18px 20px; opacity: {{ previewOpacity }}; transform: translateY({{ previewY }}px); transition: opacity 0.5s ease, transform 0.66s cubic-bezier(0.32,0.72,0,1); pointer-events: {{ previewEvents }};" style-after="content: ''; position: absolute; inset: 0; z-index: -1; border-radius: 22px; box-shadow:;">
             <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
               <span style="width: 8px; height: 8px; border-radius: 999px; background: {{ shown.color }};"></span>
-              <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.11em; text-transform: uppercase; color: rgba(245,245,247,0.56);">{{ shown.category }} · {{ shown.year }}</span>
+              <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: rgba(245,245,247,0.56);">{{ shown.category }} · {{ shown.year }}</span>
             </div>
-            <h3 style="margin: 0 0 7px; font-size: 20px; letter-spacing: -0.022em; font-weight: 600;">{{ shown.title }}</h3>
+            <h3 style="margin: 0 0 7px; font-size: 20px; letter-spacing: -0.012em; font-weight: 600;">{{ shown.title }}</h3>
             <p style="margin: 0 0 16px; font-size: 14px; line-height: 1.5; color: rgba(245,245,247,0.6); max-width: 52ch;">{{ shown.blurb }}</p>
             <div style="display: flex; align-items: center; gap: 14px; flex-wrap: wrap;">
-              <button type="button" onClick="{{ openShown }}" style="border: 1px solid rgba(255,255,255,0.24); background: linear-gradient(155deg, rgba(255,255,255,0.075), rgba(255,255,255,0.04)), {{ accent }}; color: #fff; padding: 11px 20px; border-radius: 999px; font: inherit; font-size: 13.5px; cursor: pointer; box-shadow: 0 1px 0 rgba(255,255,255,0.099) inset, 0 14px 28px -14px rgba(0,0,0,0.5); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-2px);">Open the project</button>
-              <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; color: rgba(245,245,247,0.4);">or click the sleeve again to close</span>
+              <button type="button" onClick="{{ openShown }}" style="border: 1px solid #EB000F; background: #0A0A0A; color: #ffffff; padding: 15px 24px; border-radius: 999px; font: inherit; font-size: 13.5px; cursor: pointer; transition: transform 0.4s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-2px);">Open the project</button>
+              <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; color: rgba(245,245,247,0.62);">or click the sleeve again to close</span>
             </div>
           </div>
           </div>
@@ -423,96 +276,50 @@
       </div>
 
       <sc-if value="{{ showMusic }}" hint-placeholder-val="{{ true }}">
-        <div data-reveal="" style="position: relative; flex: 1 1 360px; min-width: 0; border-radius: 32px; overflow: hidden; background: radial-gradient(120% 80% at 50% -10%, #17171a, #030304 62%); border: 1px solid rgba(255,255,255,0.08); box-shadow: 0 40px 70px -40px rgba(0,0,0,0.85); display: flex; flex-direction: column; padding: clamp(22px, 2.2vw, 30px) clamp(20px, 2vw, 28px) clamp(22px, 2.2vw, 28px); perspective: 1200px;">
+        <div data-reveal="" data-music="1" style="position: relative; flex: 1 1 360px; min-width: 0; border-radius: 20px; overflow: hidden; background: #0A0A0A; border: 1px solid rgba(235,0,15,0.35); display: flex; flex-direction: column; justify-content: space-between; gap: clamp(20px, 3vh, 34px); padding: clamp(22px, 2.2vw, 32px); border-color: #EB000F; border-width: 0.3px">
           <div style="display: flex; align-items: flex-start; justify-content: space-between; gap: 14px;">
             <div>
-              <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 8px;">On repeat</div>
+              <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F; margin-bottom: 10px;">On repeat</div>
               <h2 style="margin: 0; font-size: clamp(20px, 1.7vw, 24px); letter-spacing: -0.024em; font-weight: 600; color: #f5f5f7;">Music I design to</h2>
             </div>
-            <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.32); border: 1px solid rgba(255,255,255,0.12); border-radius: 999px; padding: 6px 11px;">ST—01</div>
+            <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: rgba(245,245,247,0.45);">{{ trackNo }}</span>
           </div>
 
-          <div style="flex: 1; display: flex; align-items: center; justify-content: center; padding: 26px 0 18px;">
-            <div style="position: relative; width: min(300px, 92%); border-radius: 36px; padding: 13px 13px 10px; background: linear-gradient(158deg, #43434a 0%, #1a1a1e 26%, #0c0c0e 78%, #17171b 100%); box-shadow: 0 70px 90px -55px #000, 0 26px 40px -30px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.16), inset 0 -2px 6px rgba(0,0,0,0.9); transform-style: preserve-3d; transition: transform 0.9s cubic-bezier(0.32,0.72,0,1), box-shadow 0.9s ease;" style-hover="transform: translateY(-8px) rotateX(7deg) rotateY(-9deg);">
-              <div style="position: absolute; right: -7px; top: 30%; width: 16px; height: 34px; border-radius: 4px; background: linear-gradient(180deg, #35353b, #17171a); box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);"></div>
-              <div style="position: absolute; right: -12px; top: 37%; width: 22px; height: 12px; border-radius: 3px; background: linear-gradient(180deg, #d9a06a, #8c5f34); box-shadow: 0 2px 6px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.088);"></div>
+          <div style="display: flex; flex-direction: column; gap: clamp(14px, 2vh, 22px);">
+            <div style="display: flex; flex-direction: column; gap: 6px; min-width: 0;">
+              <span style="font-size: clamp(20px, 2.2vw, 30px); line-height: 1.1; letter-spacing: -0.028em; color: #f5f5f7; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ current.track }}</span>
+              <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: rgba(245,245,247,0.45);">{{ statusLabel }} · AI generated</span>
+            </div>
 
-              <div style="position: relative; border-radius: 24px; overflow: hidden; background: #050506; border: 1px solid rgba(255,255,255,0.06); box-shadow: inset 0 3px 16px rgba(0,0,0,0.95); padding: 20px 18px 18px;">
-                <div style="position: absolute; inset: 0; background: {{ current.glow }}; opacity: 0.5; transition: background 1.2s ease;"></div>
-                <div style="position: absolute; inset: 0; background-image: radial-gradient(rgba(0,0,0,0.55) 42%, rgba(0,0,0,0) 43%); background-size: 3px 3px; pointer-events: none; z-index: 3;"></div>
-                <div style="position: absolute; inset: 0; background: linear-gradient(155deg, rgba(255,255,255,0.14), rgba(255,255,255,0) 38%); pointer-events: none; z-index: 4;"></div>
+            <div style="height: 2px; background: rgba(255,255,255,0.12); overflow: hidden;">
+              <div style="height: 100%; background: #EB000F; animation: progress 42s linear infinite; animation-play-state: {{ playState }};"></div>
+            </div>
 
-                <div style="position: relative; z-index: 2;">
-                  <div style="display: flex; align-items: center; justify-content: space-between; font-variant-numeric: tabular-nums; font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 8px; letter-spacing: 0.18em; text-transform: uppercase; color: {{ ledDim }};">
-                    <span>{{ statusLabel }}</span>
-                    <div style="display: flex; align-items: center; gap: 9px;">
-                      <span>{{ trackNo }}</span>
-                      <button type="button" onClick="{{ toggleMute }}" aria-label="{{ muteLabel }}" title="{{ muteLabel }}" style="display: inline-flex; align-items: center; justify-content: center; width: 22px; height: 22px; padding: 0; border-radius: 999px; cursor: pointer; border: 1px solid {{ muteBorder }}; background: {{ muteBg }}; color: {{ muteFg }}; transition: background 0.35s ease, color 0.35s ease, border-color 0.35s ease;" style-hover="border-color: rgba(255,255,255,0.4);">
-                        <svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="{{ mutePath }}"></path></svg>
-                      </button>
-                    </div>
-                  </div>
-                  <div style="margin-top: 14px; font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 17px; line-height: 1.1; letter-spacing: 0.02em; text-transform: uppercase; color: #f4f4f6; text-shadow: {{ ledGlow }}; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ current.artist }}</div>
-                  <div style="margin-top: 5px; font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(244,244,246,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ current.track }}</div>
-
-                  <div style="display: flex; align-items: flex-end; gap: 3px; height: 22px; margin-top: 16px;">
-                    <sc-for list="{{ bars }}" as="bar" hint-placeholder-count="18">
-                      <span style="flex: 1; height: 100%; border-radius: 1px; background: linear-gradient(180deg, {{ ledColor }}, rgba(255,255,255,0.15)); transform-origin: 50% 100%; animation: eq {{ bar.dur }}s ease-in-out infinite {{ bar.delay }}s; animation-play-state: {{ playState }};"></span>
-                    </sc-for>
-                  </div>
-
-                  <div style="height: 2px; border-radius: 999px; background: rgba(255,255,255,0.14); margin-top: 14px; overflow: hidden;">
-                    <div style="height: 100%; border-radius: 999px; background: {{ ledColor }}; animation: progress 42s linear infinite; animation-play-state: {{ playState }};"></div>
-                  </div>
-                </div>
-              </div>
-
-              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 16px 4px 8px;">
-                <sc-for list="{{ knobs }}" as="k" hint-placeholder-count="3">
-                  <div style="display: flex; flex-direction: column; align-items: center; gap: 9px;">
-                    <span style="font-size: 9px; font-weight: 400; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.55);">{{ k.label }}</span>
-                    <button type="button" onClick="{{ k.onClick }}" aria-label="{{ k.label }}" title="{{ k.label }}" style="position: relative; width: 52px; height: 52px; border-radius: 999px; border: 0; padding: 0; cursor: pointer; background: transparent; box-shadow: 0 12px 18px -10px rgba(0,0,0,0.9); transition: box-shadow 0.5s ease; -webkit-tap-highlight-color: transparent;" style-hover="box-shadow: 0 16px 22px -10px rgba(0,0,0,0.95), 0 0 0 4px rgba(217,160,106,0.16);">
-                      <span style="position: absolute; inset: 0; border-radius: 999px; pointer-events: none; background: repeating-conic-gradient(from 0deg, #2c2c31 0deg 2.6deg, #101013 2.6deg 5.2deg); box-shadow: inset 0 -2px 4px rgba(0,0,0,0.8); transform: rotate({{ k.rot }}deg); transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);"></span>
-                      <span style="position: absolute; inset: 5px; border-radius: 999px; pointer-events: none; background: radial-gradient(circle at 38% 26%, #3a3a40, #141417 62%, #08080a); box-shadow: inset 0 1px 0 rgba(255,255,255,0.2);"></span>
-                      <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none;">
-                        <svg viewBox="0 0 24 24" width="17" height="17" fill="{{ k.dot }}" aria-hidden="true" style="filter: drop-shadow(0 0 6px {{ k.dotGlow }});">
-                          <path d="{{ k.path }}"></path>
-                        </svg>
-                      </span>
-                    </button>
-                  </div>
-                </sc-for>
-              </div>
-
-              <div style="display: flex; align-items: center; justify-content: center; gap: 9px; padding-bottom: 4px;">
-                <sc-for list="{{ vents }}" as="v" hint-placeholder-count="8">
-                  <span style="width: 4px; height: 4px; border-radius: 999px; background: #050506; box-shadow: inset 0 1px 1px rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.07);"></span>
-                </sc-for>
-                <span style="width: 34px; height: 7px; border-radius: 999px; background: #050506; box-shadow: inset 0 1px 2px rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.08); margin: 0 4px;"></span>
-                <sc-for list="{{ vents }}" as="v" hint-placeholder-count="8">
-                  <span style="width: 4px; height: 4px; border-radius: 999px; background: #050506; box-shadow: inset 0 1px 1px rgba(0,0,0,0.9), 0 1px 0 rgba(255,255,255,0.07);"></span>
-                </sc-for>
-              </div>
+            <div style="display: flex; align-items: center; gap: 10px; flex-wrap: wrap;">
+              <button type="button" onClick="{{ prevTrack }}" aria-label="Previous track" title="Previous" style="display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; padding: 0; border-radius: 999px; cursor: pointer; border: 1px solid rgba(255,255,255,0.18); background: transparent; color: #f5f5f7; transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;" style-hover="background: #f5f5f7; color: #0A0A0A; border-color: #f5f5f7;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M7 6h2.2v12H7zM19 6.6v10.8L10.6 12z"></path></svg>
+              </button>
+              <button type="button" onClick="{{ togglePlay }}" aria-label="{{ playLabel }}" title="{{ playLabel }}" style="display: inline-flex; align-items: center; justify-content: center; width: 58px; height: 58px; padding: 0; border-radius: 999px; cursor: pointer; border: 0; background: #EB000F; color: #0A0A0A; transition: transform 0.3s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: scale(1.06);">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="{{ playPath }}"></path></svg>
+              </button>
+              <button type="button" onClick="{{ nextTrack }}" aria-label="Next track" title="Next" style="display: inline-flex; align-items: center; justify-content: center; width: 46px; height: 46px; padding: 0; border-radius: 999px; cursor: pointer; border: 1px solid rgba(255,255,255,0.18); background: transparent; color: #f5f5f7; transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;" style-hover="background: #f5f5f7; color: #0A0A0A; border-color: #f5f5f7;">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M14.8 6H17v12h-2.2zM5 6.6 13.4 12 5 17.4z"></path></svg>
+              </button>
+              <button type="button" onClick="{{ toggleMute }}" aria-label="{{ muteLabel }}" title="{{ muteLabel }}" style="display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 46px; margin-left: auto; padding: 0 18px; border-radius: 999px; cursor: pointer; border: 1px solid {{ muteBorder }}; background: {{ muteBg }}; color: {{ muteFg }}; font: inherit; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;" style-hover="border-color: #EB000F;">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="{{ mutePath }}"></path></svg>
+                {{ muteLabel }}
+              </button>
             </div>
           </div>
 
-          <div style="display: flex; align-items: flex-end; justify-content: center; padding: 10px 0 4px 22px;">
+          <div style="display: flex; flex-direction: column; gap: 2px;">
             <sc-for list="{{ chips }}" as="c" hint-placeholder-count="4">
-              <button type="button" onClick="{{ c.onClick }}" title="{{ c.label }}" aria-label="{{ c.label }}" style="position: relative; width: 66px; height: 66px; flex: none; margin-left: -22px; padding: 0; border-radius: 15px; cursor: pointer; border: 1px solid {{ c.border }}; background: {{ c.bg }}; opacity: {{ c.opacity }}; box-shadow: {{ c.shadow }}, 0 14px 22px -14px rgba(0,0,0,0.9); transform: rotate({{ c.rot }}deg) translateY({{ c.lift }}px); z-index: {{ c.z }}; transition: transform 0.5s cubic-bezier(0.32,0.72,0,1), opacity 0.4s ease, box-shadow 0.4s ease;" style-hover="transform: rotate(0deg) translateY(-10px) scale(1.08); opacity: 1; z-index: 30;">
-                <span style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; opacity: {{ c.iconOp }}; transition: opacity 0.4s ease;">
-                  <svg viewBox="0 0 24 24" width="26" height="26" fill="rgba(255,255,255,0.9)" aria-hidden="true" style="filter: drop-shadow(0 1px 2px rgba(0,0,0,0.7));">
-                    <path d="{{ c.mark }}"></path>
-                  </svg>
-                </span>
-                <span style="position: absolute; left: 0; right: 0; bottom: 18px; height: 22px; display: {{ c.eqShow }}; align-items: flex-end; justify-content: center; gap: 3px;">
-                  <span style="width: 3px; height: 100%; border-radius: 2px; background: rgba(255,255,255,0.92); transform-origin: 50% 100%; animation: eq 1.05s ease-in-out infinite; animation-play-state: {{ c.eqRun }};"></span>
-                  <span style="width: 3px; height: 100%; border-radius: 2px; background: rgba(255,255,255,0.92); transform-origin: 50% 100%; animation: eq 1.05s ease-in-out 0.22s infinite; animation-play-state: {{ c.eqRun }};"></span>
-                  <span style="width: 3px; height: 100%; border-radius: 2px; background: rgba(255,255,255,0.92); transform-origin: 50% 100%; animation: eq 1.05s ease-in-out 0.44s infinite; animation-play-state: {{ c.eqRun }};"></span>
-                </span>
+              <button type="button" onClick="{{ c.onClick }}" aria-label="{{ c.label }}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; width: 100%; min-height: 44px; padding: 0 4px; border: 0; border-top: 1px solid rgba(255,255,255,0.09); background: transparent; color: {{ c.fg }}; font: inherit; font-size: 14px; letter-spacing: -0.01em; text-align: left; cursor: pointer; transition: color 0.3s ease;" style-hover="color: #EB000F;">
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">{{ c.label }}</span>
+                <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: {{ c.badge }}; flex: none;">{{ c.state }}</span>
               </button>
             </sc-for>
           </div>
-          <div style="text-align: center; font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(255,255,255,0.26); padding-top: 14px;">AI generated music</div>
         </div>
       </sc-if>
     </div>
@@ -522,15 +329,15 @@
   <section id="work" data-screen-label="Gallery" style="padding: clamp(60px, 10vh, 110px) clamp(20px, 5vw, 64px); max-width: 1560px; margin: 0 auto;">
     <div data-reveal="" style="display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 34px;">
       <div>
-        <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,245,247,0.42); margin-bottom: 10px;">Shot on my phone</div>
+        <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F; margin-bottom: 10px;">Shot on my phone</div>
         <h2 style="margin: 0; font-size: clamp(26px, 3.6vw, 44px); letter-spacing: -0.03em; font-weight: 600;">Gallery</h2>
       </div>
-      <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.42);">{{ galTotal }}</span>
+      <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F;">{{ galTotal }}</span>
     </div>
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: clamp(24px, 3vw, 44px) clamp(18px, 2.4vw, 34px); max-width: 1100px;">
       <sc-for list="{{ folders }}" as="f" hint-placeholder-count="3">
-        <div data-reveal="" onClick="{{ f.onClick }}" onMouseEnter="{{ f.onEnter }}" onMouseLeave="{{ f.onLeave }}" style="cursor: {{ f.cursor }}; opacity: {{ f.op }}; transition: opacity 0.4s ease;">
+        <div data-reveal="" onClick="{{ f.onClick }}" role="button" tabIndex="{{ 0 }}" onKeyDown="{{ keyAct }}" onMouseEnter="{{ f.onEnter }}" onMouseLeave="{{ f.onLeave }}" style="cursor: {{ f.cursor }}; opacity: {{ f.op }}; transition: opacity 0.4s ease;">
           <div style="position: relative; aspect-ratio: 5 / 4; transform: translateY({{ f.fLift }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);">
             <div style="position: absolute; left: 3%; top: 9%; width: 36%; height: 13%; border-radius: 9px 14px 0 0; background: {{ f.fBack }}; box-shadow: 0 -1px 0 rgba(255,255,255,0.132) inset;"></div>
             <div style="position: absolute; left: 3%; right: 3%; top: 20%; bottom: 0; border-radius: 3px 14px 16px 16px; background: {{ f.fBack }}; box-shadow: 0 26px 38px -26px rgba(0,0,0,0.4);"></div>
@@ -551,30 +358,30 @@
               </sc-if>
             </div>
 
-            <div style="position: absolute; left: 3%; right: 3%; bottom: 0; height: 52%; border-radius: 14px; background: {{ f.fGlass }}; border: 1px solid rgba(255,255,255,0.17); box-shadow: inset 0 1px 0 rgba(255,255,255,0.17), inset 0 -14px 24px rgba(255,255,255,0.099), 0 20px 30px -22px rgba(0,0,0,0.4); backdrop-filter: blur(7px) saturate(1.5); -webkit-backdrop-filter: blur(7px) saturate(1.5); transform: translateY({{ f.fFront }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);"></div>
+            <div style="position: absolute; left: 3%; right: 3%; bottom: 0; height: 52%; border-radius: 14px; background: {{ f.fGlass }}; border: 1px solid rgba(255,255,255,0.17); box-shadow: inset 0 1px 0 rgba(255,255,255,0.17), inset 0 -14px 24px rgba(255,255,255,0.099), 0 20px 30px -22px rgba(0,0,0,0.4); transform: translateY({{ f.fFront }}px); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1);"></div>
           </div>
 
           <div style="text-align: center; margin-top: 16px;">
             <div style="font-size: 15px; font-weight: 500; letter-spacing: -0.014em;">{{ f.name }}</div>
-            <div style="display: inline-block; margin-top: 7px; padding: 4px 11px; border-radius: 999px; background: rgba(255,255,255,0.07); font-size: 12px; color: rgba(245,245,247,0.5);">{{ f.note }} · {{ f.count }}</div>
+            <div style="display: inline-block; margin-top: 7px; padding: 4px 11px; border-radius: 999px; background: #101014; font-size: 13.5px; font-weight: 700; color: rgba(245,245,247,0.5);">{{ f.note }} · {{ f.count }}</div>
           </div>
         </div>
       </sc-for>
     </div>
 
-    <div onClick="{{ galClose }}" style="position: fixed; inset: 0; z-index: 95; display: flex; align-items: center; justify-content: center; padding: clamp(10px, 2.4vw, 44px); background: rgba(5,5,6,0.84); backdrop-filter: blur(22px) saturate(1.4); -webkit-backdrop-filter: blur(22px) saturate(1.4); opacity: {{ galOp }}; visibility: {{ galVis }}; transition: opacity 0.5s ease, visibility 0.5s ease;">
-      <div onClick="{{ stopEvt }}" style="position: relative; width: 100%; max-width: 1400px; max-height: 88vh; display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; background: rgba(14,14,17,0.94); border: 1px solid rgba(255,255,255,0.13); box-shadow: 0 70px 130px -50px rgba(0,0,0,0.9), inset 0 1px 0 rgba(255,255,255,0.09); transform: translateY({{ galY }}px) scale({{ galSc }}); transition: transform 0.65s cubic-bezier(0.32,0.72,0,1); cursor: default;">
-        <div style="flex: none; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding: clamp(15px, 1.8vw, 23px) clamp(16px, 2vw, 28px); border-bottom: 1px solid rgba(255,255,255,0.09); background: rgba(20,20,24,0.6);">
+    <div onClick="{{ galClose }}" style="position: fixed; inset: 0; z-index: 95; display: flex; align-items: center; justify-content: center; padding: clamp(10px, 2.4vw, 44px); background: rgba(5,5,6,0.84); opacity: {{ galOp }}; visibility: {{ galVis }}; transition: opacity 0.5s ease, visibility 0.5s ease;">
+      <div onClick="{{ stopEvt }}" style="position: relative; width: 100%; max-width: 1400px; max-height: 88vh; display: flex; flex-direction: column; border-radius: 18px; overflow: hidden; background: rgba(14,14,17,0.94); border: 1px solid rgba(255,255,255,0.13); box-shadow: 0 70px 130px -50px rgba(0,0,0,0.9), inset 0 1px 0 #17171c; transform: translateY({{ galY }}px) scale({{ galSc }}); transition: transform 0.65s cubic-bezier(0.32,0.72,0,1); cursor: default;">
+        <div style="flex: none; display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; padding: clamp(15px, 1.8vw, 23px) clamp(16px, 2vw, 28px); border-bottom: 1px solid #17171c; background: rgba(20,20,24,0.6);">
           <div style="display: flex; align-items: baseline; gap: 12px;">
-            <h3 style="margin: 0; font-size: clamp(18px, 2.1vw, 26px); letter-spacing: -0.026em; font-weight: 600;">{{ galTitle }}</h3>
-            <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.42);">{{ galCount }}</span>
+            <h3 style="margin: 0; font-size: clamp(18px, 2.1vw, 26px); letter-spacing: -0.014em; font-weight: 600;">{{ galTitle }}</h3>
+            <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F;">{{ galCount }}</span>
           </div>
-          <div onClick="{{ galClose }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; padding: 11px 18px; border-radius: 999px; font-size: 12.5px; color: rgba(245,245,247,0.66); background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.13); transition: all 0.35s ease;" style-hover="background: #f5f5f7; color: #08080a;">Close</div>
+          <div onClick="{{ galClose }}" role="button" tabIndex="{{ 0 }}" onKeyDown="{{ keyAct }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; padding: 11px 18px; border-radius: 999px; font-size: 14px; color: rgba(245,245,247,0.66); background: #101014; border: 1px solid rgba(255,255,255,0.13); transition: all 0.35s ease;" style-hover="background: #f5f5f7; color: #08080a;">Close</div>
         </div>
         <div data-no-smooth="" style="flex: 1; min-height: 0; overflow-y: auto; overscroll-behavior: contain; -webkit-overflow-scrolling: touch; padding: clamp(14px, 1.8vw, 24px);">
           <div style="columns: 280px 4; column-gap: clamp(10px, 1.2vw, 16px);">
             <sc-for list="{{ photos }}" as="p" hint-placeholder-count="6">
-              <div onClick="{{ p.onClick }}" style="break-inside: avoid; margin: 0 0 clamp(10px, 1.2vw, 16px); border-radius: 10px; overflow: hidden; background: #101013; cursor: zoom-in; border: 1px solid rgba(255,255,255,0.07); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), border-color 0.4s ease;" style-hover="transform: translateY(-3px); border-color: rgba(255,255,255,0.2);">
+              <div onClick="{{ p.onClick }}" role="button" tabIndex="{{ 0 }}" onKeyDown="{{ keyAct }}" style="break-inside: avoid; margin: 0 0 clamp(10px, 1.2vw, 16px); border-radius: 10px; overflow: hidden; background: #101013; cursor: zoom-in; border: 1px solid rgba(255,255,255,0.07); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), border-color 0.4s ease;" style-hover="transform: translateY(-3px); border-color: rgba(255,255,255,0.2);">
                 <sc-if value="{{ p.isImg }}" hint-placeholder-val="{{ false }}">
                   <img src="{{ p.src }}" alt="{{ p.alt }}" loading="lazy" style="width: 100%; height: auto; display: block;">
                 </sc-if>
@@ -586,13 +393,13 @@
       </div>
     </div>
 
-    <div onClick="{{ lbClose }}" style="position: fixed; inset: 0; z-index: 112; display: {{ lbShow }}; align-items: center; justify-content: center; padding: clamp(16px, 4vw, 54px); background: rgba(5,5,6,0.86); backdrop-filter: blur(18px) saturate(1.4); -webkit-backdrop-filter: blur(18px) saturate(1.4); cursor: zoom-out;">
+    <div onClick="{{ lbClose }}" style="position: fixed; inset: 0; z-index: 112; display: {{ lbShow }}; align-items: center; justify-content: center; padding: clamp(16px, 4vw, 54px); background: rgba(5,5,6,0.86); cursor: zoom-out;">
       <div style="position: relative; max-width: 100%; max-height: 100%; display: flex; flex-direction: column; align-items: center; gap: 14px;">
         {{ lbNode }}
         <div style="display: flex; align-items: center; gap: 10px;">
-          <div onClick="{{ lbPrev }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; width: 42px; height: 42px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(245,245,247,0.8); font-size: 15px;" style-hover="background: #f5f5f7; color: #08080a;">‹</div>
-          <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.5); min-width: 150px; text-align: center;">{{ lbLabel }}</span>
-          <div onClick="{{ lbNext }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; width: 42px; height: 42px; border-radius: 999px; background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); color: rgba(245,245,247,0.8); font-size: 15px;" style-hover="background: #f5f5f7; color: #08080a;">›</div>
+          <div onClick="{{ lbPrev }}" role="button" tabIndex="{{ 0 }}" onKeyDown="{{ keyAct }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; width: 42px; height: 42px; border-radius: 999px; background: #101014; border: 1px solid rgba(255,255,255,0.16); color: rgba(245,245,247,0.8); font-size: 15px;" style-hover="background: #f5f5f7; color: #08080a;">‹</div>
+          <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F; min-width: 150px; text-align: center;">{{ lbLabel }}</span>
+          <div onClick="{{ lbNext }}" role="button" tabIndex="{{ 0 }}" onKeyDown="{{ keyAct }}" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; cursor: pointer; width: 42px; height: 42px; border-radius: 999px; background: #101014; border: 1px solid rgba(255,255,255,0.16); color: rgba(245,245,247,0.8); font-size: 15px;" style-hover="background: #f5f5f7; color: #08080a;">›</div>
         </div>
       </div>
     </div>
@@ -600,30 +407,28 @@
     <div data-reveal="" style="margin-top: clamp(60px, 10vh, 110px);">
       <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-bottom: 26px;">
         <h2 style="margin: 0; font-size: clamp(22px, 2.8vw, 34px); letter-spacing: -0.028em; font-weight: 600;">Live sites</h2>
-        <span style="font-size: 13.5px; color: rgba(245,245,247,0.5);">Built and shipped — scroll inside the frames.</span>
+        <span style="font-size: 13.5px; color: rgba(245,245,247,0.5);">Built and shipped — tap a screen to open the real site.</span>
       </div>
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: clamp(18px, 2vw, 28px);">
-        <sc-for list="{{ liveSites }}" as="site" hint-placeholder-count="2">
-          <div style="border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.1); background: #0d0d10; box-shadow: 0 30px 50px -34px rgba(0,0,0,0.35); transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), box-shadow 0.6s ease;" style-hover="transform: translateY(-4px); box-shadow: 0 44px 60px -34px rgba(0,0,0,0.42);">
-            <div style="display: flex; align-items: center; gap: 8px; padding: 10px 13px; border-bottom: 1px solid rgba(255,255,255,0.08); background: #121216;">
-              <span style="width: 9px; height: 9px; border-radius: 999px; background: rgba(0,0,0,0.12);"></span>
-              <span style="width: 9px; height: 9px; border-radius: 999px; background: rgba(0,0,0,0.1);"></span>
-              <span style="width: 9px; height: 9px; border-radius: 999px; background: rgba(0,0,0,0.08);"></span>
-              <span style="flex: 1; text-align: center; font-size: 11.5px; color: rgba(245,245,247,0.5); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ site.host }}</span>
-              <a href="{{ site.url }}" target="_blank" rel="noopener" style="font-size: 11.5px; color: rgba(245,245,247,0.56); white-space: nowrap;" style-hover="color: #f5f5f7;">Open ↗</a>
-            </div>
-            <div style="position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #08080a;">
-              <iframe src="{{ site.url }}" title="{{ site.name }}" loading="lazy" style="position: absolute; top: 0; left: 0; width: 143%; height: 143%; border: 0; transform: scale(0.7); transform-origin: 0 0; pointer-events: {{ site.pe }};"></iframe>
-              <div onClick="{{ site.activate }}" style="position: absolute; inset: 0; display: {{ site.shield }}; align-items: flex-end; justify-content: center; padding-bottom: 16px; cursor: pointer; background: linear-gradient(180deg, rgba(5,5,6,0) 60%, rgba(5,5,6,0.5));">
-                <span style="padding: 7px 14px; border-radius: 999px; font-size: 11.5px; letter-spacing: 0.04em; color: rgba(245,245,247,0.82); background: rgba(10,10,12,0.6); border: 1px solid rgba(255,255,255,0.16); backdrop-filter: blur(8px) saturate(1.5); -webkit-backdrop-filter: blur(8px) saturate(1.5); opacity: 0; transition: opacity 0.35s ease;" style-hover="opacity: 1;">Click to interact</span>
-              </div>
-            </div>
-            <div style="display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 14px 16px 16px;">
-              <div style="font-size: 15px; font-weight: 500; letter-spacing: -0.014em;">{{ site.name }}</div>
-              <div style="font-size: 12.5px; color: rgba(245,245,247,0.42);">{{ site.role }}</div>
-            </div>
+      <div data-reveal="" data-posters="1" style="padding: clamp(6px, 1.6vw, 20px) 0 clamp(20px, 4vw, 54px);">
+        <div>
+          <div style="display: flex; align-items: center; gap: 10px; padding: 0 0 14px;">
+            <span style="flex: 1; font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F;">Shipped builds · {{ liveCount }}</span>
           </div>
-        </sc-for>
+
+          <div data-stack="1" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: clamp(8px, 1vw, 14px); align-items: stretch;">
+            <sc-for list="{{ liveSites }}" as="site" hint-placeholder-count="5">
+              <a href="{{ site.url }}" target="_blank" rel="noopener" title="{{ site.host }}" style="position: relative; display: flex; flex-direction: column; min-width: 0; text-decoration: none; color: #0A0A0A; aspect-ratio: 5 / 7; overflow: hidden; background: #EB000F; transition: transform 0.6s cubic-bezier(0.32,0.72,0,1), box-shadow 0.5s ease;" style-hover="transform: translateY(-10px); box-shadow: 0 40px 60px -34px rgba(235,0,15,0.55);">
+                <div style="position: relative; flex: 0 0 46%; overflow: hidden; background: #0b0b0e;">
+                  <img src="{{ site.shot }}" alt="{{ site.name }} website" loading="lazy" decoding="async" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; display: block;">
+                </div>
+                <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; padding: clamp(10px, 1.2vw, 16px);">
+                  <div style="font-weight: 700; text-transform: uppercase; font-size: clamp(20px, 2.1vw, 34px); line-height: 0.94; letter-spacing: -0.04em;">{{ site.name }}</div>
+                  <span style="align-self: flex-start; padding: 4px 9px; border: 1px solid #0A0A0A; font-size: 11.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0;">Live</span>
+                </div>
+              </a>
+            </sc-for>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -632,134 +437,77 @@
 
 
 
-  <footer data-screen-label="Footer" style="position: relative; overflow: hidden; background: #050506; color: #f5f5f7; padding: clamp(80px, 14vh, 170px) clamp(20px, 5vw, 64px) 30px;">
-    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(5,5,6,0.72), rgba(5,5,6,0.42) 45%, rgba(5,5,6,0.9)); pointer-events: none;"></div>
+  <footer role="contentinfo" data-screen-label="Footer" style="position: relative; overflow: hidden; background: #EB000F; color: #0A0A0A; padding: clamp(80px, 14vh, 170px) clamp(20px, 5vw, 64px) 30px;">
+    <div style="position: absolute; inset: 0; background: none; pointer-events: none;"></div>
 
     <div style="position: relative; max-width: 1560px; margin: 0 auto; pointer-events: none;">
-      <div id="contact" style="display: flex; flex-wrap: wrap; gap: clamp(30px, 5vw, 70px); justify-content: space-between; align-items: flex-start; pointer-events: auto; scroll-margin-top: 80px;">
-        <div style="display: flex; gap: clamp(28px, 5vw, 70px); flex-wrap: wrap;">
-          <div style="display: flex; flex-direction: column; gap: 9px;">
-            <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9.5px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,245,247,0.36);">Elsewhere</div>
-            <a href="https://www.behance.net/shobinthomas1" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 300; letter-spacing: -0.004em; color: rgba(245,245,247,0.78); text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">Behance ↗</a>
-            <a href="https://www.linkedin.com/in/shobin-thomas7/" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 300; letter-spacing: -0.004em; color: rgba(245,245,247,0.78); text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">LinkedIn ↗</a>
-            <a href="https://www.tiron.agency" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 300; letter-spacing: -0.004em; color: rgba(245,245,247,0.78); text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">TIRON Agency ↗</a>
-            <a href="https://www.instagram.com/s7xt98/" target="_blank" rel="noopener" style="font-size: 14px; font-weight: 300; letter-spacing: -0.004em; color: rgba(245,245,247,0.78); text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">Instagram ↗</a>
-          </div>
-          <div style="display: flex; flex-direction: column; gap: 9px;">
-            <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9.5px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,245,247,0.36);">Say hello</div>
-            <a href="mailto:shobint7@gmail.com" style="font-size: 14px; font-weight: 300; letter-spacing: -0.004em; color: rgba(245,245,247,0.78); text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">shobint7@gmail.com</a>
-            <span style="font-size: 14px; font-weight: 300; color: rgba(245,245,247,0.5);">Dubai, UAE</span>
-            <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 12px; letter-spacing: 0.08em; color: rgba(245,245,247,0.5);">{{ clock }} GST</span>
+      <div id="contact" style="display: flex; flex-wrap: wrap; gap: clamp(30px, 5vw, 70px); justify-content: space-between; align-items: stretch; pointer-events: auto; scroll-margin-top: 80px;">
+        <div data-reveal="" style="display: flex; gap: clamp(28px, 5vw, 70px); flex-wrap: wrap; transition-delay: 0.05s;">
+          <div style="display: flex; flex-direction: column; gap: 2px;">
+            <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: rgba(10,10,10,0.6); font-size: 23px;">Elsewhere</div>
+            <a href="https://www.behance.net/shobinthomas1" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 24px; font-weight: 700; letter-spacing: -0.004em; color: #0A0A0A; text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">Behance ↗</a>
+            <a href="https://www.linkedin.com/in/shobin-thomas7/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 24px; font-weight: 700; letter-spacing: -0.004em; color: #0A0A0A; text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">LinkedIn ↗</a>
+            <a href="https://www.tiron.agency" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 24px; font-weight: 700; letter-spacing: -0.004em; color: #0A0A0A; text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">TIRON Agency ↗</a>
+            <a href="https://www.instagram.com/s7xt98/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; min-height: 44px; font-size: 24px; font-weight: 700; letter-spacing: -0.004em; color: #0A0A0A; text-decoration: none; transition: color 0.35s ease;" style-hover="color: #fff;">Instagram ↗</a>
           </div>
         </div>
-        <div style="max-width: 44ch; min-width: min(340px, 100%);">
-          <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9.5px; letter-spacing: 0.16em; text-transform: uppercase; color: rgba(245,245,247,0.36); margin-bottom: 14px;">Contact</div>
-          <h2 style="margin: 0 0 22px; font-size: clamp(26px, 3.4vw, 44px); line-height: 1.04; letter-spacing: -0.03em; font-weight: 600; color: #f5f5f7; text-wrap: pretty;">How about a cup of coffee?</h2>
-          <div style="display: flex; flex-wrap: wrap; gap: 10px;">
-            <a href="mailto:shobint7@gmail.com" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; gap: 9px; padding: 16px 26px; border-radius: 999px; font-size: 15px; color: #050506; background: linear-gradient(155deg, #ffffff, #e8e8ee), #ffffff; border: 1px solid rgba(255,255,255,0.2); box-shadow: 0 20px 38px -20px rgba(0,0,0,0.8); transition: transform 0.45s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-2px); color: #050506;">shobint7@gmail.com</a>
-            <a href="https://www.behance.net/shobinthomas1" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; gap: 9px; padding: 16px 26px; border-radius: 999px; font-size: 15px; color: #f5f5f7; background: rgba(255,255,255,0.075); border: 1px solid rgba(255,255,255,0.17); backdrop-filter: blur(8px) saturate(1.6); -webkit-backdrop-filter: blur(8px) saturate(1.6); transition: transform 0.45s cubic-bezier(0.32,0.72,0,1), background 0.4s ease;" style-hover="transform: translateY(-2px); background: rgba(255,255,255,0.12);">Behance ↗</a>
-            <a href="https://www.linkedin.com/in/shobin-thomas7/" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; gap: 9px; padding: 16px 26px; border-radius: 999px; font-size: 15px; color: #f5f5f7; background: rgba(255,255,255,0.075); border: 1px solid rgba(255,255,255,0.17); backdrop-filter: blur(8px) saturate(1.6); -webkit-backdrop-filter: blur(8px) saturate(1.6); transition: transform 0.45s cubic-bezier(0.32,0.72,0,1), background 0.4s ease;" style-hover="transform: translateY(-2px); background: rgba(255,255,255,0.12);">LinkedIn ↗</a>
+        <div data-reveal="" style="max-width: 44ch; min-width: min(340px, 100%); transition-delay: 0.16s;">
+          <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: rgba(10,10,10,0.6); font-size: 23px; margin-bottom: 14px;">Contact</div>
+          <h2 style="margin: 0 0 22px; font-size: 31px; line-height: 1.04; letter-spacing: -0.03em; font-weight: 600; color: #0A0A0A; text-wrap: pretty">How About A Cup Of Coffee?</h2>
+          <div style="display: flex;">
+            <a href="mailto:shobint7@gmail.com" style="display: inline-flex; align-items: center; justify-content: center; line-height: 1; padding: 20px 34px; border-radius: 999px; font-size: 25px; color: #0A0A0A; background: transparent; border: 1px solid #0A0A0A; text-decoration: none; transition: transform 0.4s cubic-bezier(0.32,0.72,0,1), background 0.4s ease, color 0.4s ease; width: 282px; height: 62px" style-hover="transform: translateY(-2px); background: #0A0A0A; color: #EB000F;">shobint7@gmail.com</a>
           </div>
         </div>
       </div>
 
-      <div style="position: relative; margin: clamp(46px, 9vh, 110px) 0 0; height: clamp(180px, 32vh, 330px); border-radius: clamp(18px, 2vw, 30px); overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: radial-gradient(120% 160% at 20% 0%, rgba(255,255,255,0.08), rgba(255,255,255,0) 60%), #0a0a0c; box-shadow: 0 50px 80px -50px rgba(0,0,0,0.9); pointer-events: auto;">
-        <div style="position: absolute; inset: 0; display: flex; align-items: center; width: max-content; gap: clamp(30px, 5vw, 80px); animation: marqueeBack 46s linear infinite; opacity: 0.2;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-          <img src="st-mark-white.svg" alt="" style="height: clamp(64px, 12vh, 150px); width: auto; display: block; flex: none;">
-        </div>
-        <div style="position: absolute; inset: 0; pointer-events: none; backdrop-filter: url(#glass-filter) blur(12px) saturate(1.7); -webkit-backdrop-filter: blur(12px) saturate(1.7); background: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.015) 55%, rgba(255,255,255,0.07)); box-shadow: inset 0 0 2px 1px rgba(255,255,255,0.16), inset 0 0 40px 14px rgba(255,255,255,0.045), inset 0 1px 0 rgba(255,255,255,0.26);"></div>
-        <div style="position: absolute; inset: 0; display: flex; align-items: center; width: max-content; animation: marquee 38s linear infinite;">
-          <div style="display: flex; align-items: center; gap: clamp(20px, 3vw, 46px); padding-right: clamp(20px, 3vw, 46px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(40px, 8vw, 118px); font-variation-settings: 'wght' 300; line-height: 1; font-weight: 300; letter-spacing: -0.012em; color: rgba(245,245,247,0.96); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="ST" style="height: clamp(30px, 5.6vw, 82px); width: auto; display: block; flex: none; opacity: 0.85; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(20px, 3vw, 46px); padding-right: clamp(20px, 3vw, 46px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(40px, 8vw, 118px); font-variation-settings: 'wght' 300; line-height: 1; font-weight: 300; letter-spacing: -0.012em; color: rgba(245,245,247,0.96); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="ST" style="height: clamp(30px, 5.6vw, 82px); width: auto; display: block; flex: none; opacity: 0.85; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(20px, 3vw, 46px); padding-right: clamp(20px, 3vw, 46px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(40px, 8vw, 118px); font-variation-settings: 'wght' 300; line-height: 1; font-weight: 300; letter-spacing: -0.012em; color: rgba(245,245,247,0.96); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="ST" style="height: clamp(30px, 5.6vw, 82px); width: auto; display: block; flex: none; opacity: 0.85; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(20px, 3vw, 46px); padding-right: clamp(20px, 3vw, 46px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(40px, 8vw, 118px); font-variation-settings: 'wght' 300; line-height: 1; font-weight: 300; letter-spacing: -0.012em; color: rgba(245,245,247,0.96); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="ST" style="height: clamp(30px, 5.6vw, 82px); width: auto; display: block; flex: none; opacity: 0.85; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(20px, 3vw, 46px); padding-right: clamp(20px, 3vw, 46px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(40px, 8vw, 118px); font-variation-settings: 'wght' 300; line-height: 1; font-weight: 300; letter-spacing: -0.012em; color: rgba(245,245,247,0.96); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="ST" style="height: clamp(30px, 5.6vw, 82px); width: auto; display: block; flex: none; opacity: 0.85; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);">
-          </div>
-          <div style="display: flex; align-items: center; gap: clamp(20px, 3vw, 46px); padding-right: clamp(20px, 3vw, 46px); flex: none;">
-            <span style="font-family: 'Zalando Sans Expanded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif; font-size: clamp(40px, 8vw, 118px); font-variation-settings: 'wght' 300; line-height: 1; font-weight: 300; letter-spacing: -0.012em; color: rgba(245,245,247,0.96); white-space: nowrap;">Shobin Thomas</span>
-            <img src="st-mark-white.svg" alt="ST" style="height: clamp(30px, 5.6vw, 82px); width: auto; display: block; flex: none; opacity: 0.85; transition: transform 0.7s cubic-bezier(0.32,0.72,0,1);">
-          </div>
-        </div>
-        <div style="position: absolute; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(5,5,6,0.85), rgba(5,5,6,0) 9%, rgba(5,5,6,0) 91%, rgba(5,5,6,0.85));"></div>
+      <div data-reveal="" style="margin: clamp(52px, 10vh, 128px) 0 0; pointer-events: auto; transition-delay: 0.28s;">
+        <div style="font-weight: 700; font-size: clamp(36px, 11.8vw, 246px); line-height: 0.82; letter-spacing: -0.05em; text-transform: uppercase; white-space: nowrap; text-align: center; color: #0A0A0A;">’26 / Shobin®</div>
       </div>
 
-      <div style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between; align-items: center; margin-top: 22px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.1); pointer-events: auto;">
-        <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.36);">© 2026 — Shobin Thomas — Graphics · UI/UX · Generative-AI · Websites</span>
-        <a href="#top" style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.55); text-decoration: none; border: 1px solid rgba(255,255,255,0.14); border-radius: 999px; padding: 8px 14px; transition: transform 0.4s cubic-bezier(0.32,0.72,0,1), color 0.35s ease;" style-hover="transform: translateY(-2px); color: #fff;">Back to top ↑</a>
-      </div>
     </div>
   </footer>
 
   <sc-if value="{{ detail }}" hint-placeholder-val="{{ false }}">
-    <div data-sheet="1" style="position: fixed; inset: 0; z-index: 100; overflow-y: auto; background: linear-gradient(160deg, rgba(10,10,12,0.9), rgba(5,5,6,0.82)); backdrop-filter: blur(34px) saturate(180%); -webkit-backdrop-filter: blur(34px) saturate(180%); animation: veilIn 0.35s ease both;">
-      <div style="position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 12px clamp(16px, 4vw, 40px); background: rgba(255,255,255,0.132); border-bottom: 1px solid rgba(255,255,255,0.154); box-shadow: 0 1px 0 rgba(255,255,255,0.17) inset;">
-        <div style="display: flex; align-items: center; gap: 10px; min-width: 0;">
-          <span style="width: 9px; height: 9px; border-radius: 999px; flex: none; background: {{ detail.color }};"></span>
-          <span style="font-size: 13.5px; font-weight: 600; letter-spacing: -0.014em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">{{ detail.title }}</span>
-          <span style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(245,245,247,0.42); white-space: nowrap;">{{ detail.category }}</span>
-        </div>
-        <button type="button" onClick="{{ closeDetail }}" style="border: 1px solid rgba(255,255,255,0.17); background: linear-gradient(160deg, rgba(255,255,255,0.17), rgba(255,255,255,0.088)); color: #f5f5f7; width: 34px; height: 34px; border-radius: 999px; font: inherit; font-size: 14px; line-height: 1; cursor: pointer; flex: none; box-shadow: 0 1px 0 rgba(255,255,255,0.17) inset, 0 10px 20px -14px rgba(0,0,0,0.45); transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-1px);">✕</button>
-      </div>
+    <div data-sheet="1" style="position: fixed; inset: 0; z-index: 100; overflow-y: auto; padding-top: 66px; background: #08080a; animation: veilIn 0.35s ease both;">
+      <button type="button" onClick="{{ closeDetail }}" aria-label="Close project" style="position: fixed; top: 80px; right: clamp(14px, 4vw, 34px); z-index: 4; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #EB000F; background: #0A0A0A; color: #ffffff; width: 42px; height: 42px; border-radius: 999px; cursor: pointer; transition: all 0.35s cubic-bezier(0.32,0.72,0,1);" style-hover="background: #EB000F; border-color: #EB000F; color: #0A0A0A;"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" style="display: block;"><path d="M1 1L13 13M13 1L1 13" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"></path></svg></button>
 
       <div style="max-width: 960px; margin: 0 auto; padding: clamp(40px, 7vh, 80px) clamp(18px, 4vw, 44px) 120px; animation: sheetIn 0.55s cubic-bezier(0.32,0.72,0,1) both;">
-        <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 10.5px; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(245,245,247,0.42); margin-bottom: 16px;">{{ detail.category }} · {{ detail.year }}</div>
-        <h1 style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 64px); line-height: 1.02; letter-spacing: -0.034em; font-weight: 600; max-width: 20ch;">{{ detail.title }}</h1>
+        <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: #EB000F; margin-bottom: 16px">{{ detail.category }} · {{ detail.year }}</div>
+        <h2 style="margin: 0 0 22px; font-size: clamp(32px, 5.4vw, 64px); line-height: 1.02; letter-spacing: -0.034em; font-weight: 600; max-width: 20ch; color: #FFFFFF">{{ detail.title }}</h2>
         <p style="margin: 0 0 44px; font-size: clamp(17px, 1.6vw, 22px); line-height: 1.5; color: rgba(245,245,247,0.56); max-width: 52ch;">{{ detail.blurb }}</p>
 
         <div style="border-radius: 8px; overflow: hidden; background: #16161a; box-shadow: 0 30px 60px -40px rgba(0,0,0,0.4); aspect-ratio: 16 / 10; background-image: {{ detailCover }}; background-size: cover; background-position: center;"></div>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; margin: 36px 0 40px; padding: 24px 0; border-top: 1px solid rgba(255,255,255,0.09); border-bottom: 1px solid rgba(255,255,255,0.09);">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 24px; margin: 36px 0 40px; padding: 24px 0; border-top: 1px solid #17171c; border-bottom: 1px solid #17171c;">
           <sc-for list="{{ detail.meta }}" as="m" hint-placeholder-count="3">
             <div>
-              <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.42); margin-bottom: 7px;">{{ m.k }}</div>
+              <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: rgba(245,245,247,0.6); margin-bottom: 7px;">{{ m.k }}</div>
               <div style="font-size: 14.5px; letter-spacing: -0.012em;">{{ m.v }}</div>
             </div>
           </sc-for>
         </div>
 
-        <a href="{{ detail.href }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px; font-size: 15px; color: #fff; background: #1d1d1f; border: 1px solid rgba(255,255,255,0.14); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-2px); color: #fff;">See the full project on Behance ↗</a>
+        <a href="{{ detail.href }}" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; padding: 14px 24px; border-radius: 999px; font-size: 15px; color: #fff; border: 1px solid rgba(255,255,255,0.14); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1); border-color: #EB000F; background-color: #00000000" style-hover="transform: translateY(-2px); color: #fff;">See the full project on Behance ↗</a>
 
-        <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 70px; padding-top: 26px; border-top: 1px solid rgba(255,255,255,0.09);">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 70px; padding-top: 26px; border-top: 1px solid #17171c;">
           <div>
-            <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 9.5px; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(245,245,247,0.42); margin-bottom: 8px;">Next project</div>
-            <div style="font-size: 20px; letter-spacing: -0.022em; font-weight: 600;">{{ nextTitle }}</div>
+            <div style="font-family: 'Helvetica Neue LT Pro', 'Helvetica Neue', Helvetica, system-ui, sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; color: rgba(245,245,247,0.6); margin-bottom: 8px;">Next project</div>
+            <div style="font-size: 20px; letter-spacing: -0.012em; font-weight: 600;">{{ nextTitle }}</div>
           </div>
           <div style="display: flex; gap: 10px;">
-            <button type="button" onClick="{{ closeDetail }}" style="border: 1px solid rgba(255,255,255,0.17); background: linear-gradient(160deg, rgba(255,255,255,0.17), rgba(255,255,255,0.088)); color: #f5f5f7; padding: 12px 20px; border-radius: 999px; font: inherit; font-size: 13.5px; cursor: pointer; box-shadow: 0 1px 0 rgba(255,255,255,0.17) inset, 0 12px 24px -16px rgba(0,0,0,0.4); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-2px);">Back</button>
-            <button type="button" onClick="{{ openNext }}" style="border: 1px solid rgba(255,255,255,0.2); background: linear-gradient(155deg, rgba(255,255,255,0.07), rgba(255,255,255,0.04)), #1d1d1f; color: #fff; padding: 12px 20px; border-radius: 999px; font: inherit; font-size: 13.5px; cursor: pointer; box-shadow: 0 1px 0 rgba(255,255,255,0.092) inset, 0 16px 30px -16px rgba(0,0,0,0.6); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1);" style-hover="transform: translateY(-2px);">Next project →</button>
+            <button type="button" onClick="{{ closeDetail }}" style="border: 1px solid rgba(255,255,255,0.17); color: #f5f5f7; padding: 12px 20px; border-radius: 999px; font: inherit; font-size: 13.5px; cursor: pointer; box-shadow: 0 1px 0 rgba(255,255,255,0.17) inset, 0 12px 24px -16px rgba(0,0,0,0.4); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1); border-color: #FFFFFF; background-color: #00000000" style-hover="transform: translateY(-2px);">Back</button>
+            <button type="button" onClick="{{ openNext }}" style="border: 1px solid rgba(255,255,255,0.2); color: #fff; padding: 12px 20px; border-radius: 999px; font: inherit; font-size: 13.5px; cursor: pointer; box-shadow: 0 1px 0 rgba(255,255,255,0.092) inset, 0 16px 30px -16px rgba(0,0,0,0.6); transition: transform 0.4s cubic-bezier(0.32,0.72,0,1); border-color: #EB000F; background-color: #00000000" style-hover="transform: translateY(-2px);">Next project →</button>
           </div>
         </div>
       </div>
     </div>
   </sc-if>
 
-</div>
+
 </x-dc>
-<script type="text/x-dc" data-dc-script data-props="{&quot;accentHue&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:250,&quot;min&quot;:0,&quot;max&quot;:360,&quot;step&quot;:2,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Look&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:90,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:10,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Look&quot;},&quot;spineFinish&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flat&quot;,&quot;gradient&quot;,&quot;ribbed&quot;],&quot;default&quot;:&quot;gradient&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Shelf&quot;},&quot;reflection&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Shelf&quot;},&quot;showMusic&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Shelf&quot;}}">
-const CATS = { "Branding": 250, "Interfaces": 250 };
+<script type="text/x-dc" data-dc-script data-props="{&quot;accentHue&quot;:{&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:27,&quot;min&quot;:0,&quot;max&quot;:360,&quot;step&quot;:2,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Look&quot;},&quot;motion&quot;:{&quot;editor&quot;:&quot;range&quot;,&quot;default&quot;:90,&quot;min&quot;:0,&quot;max&quot;:100,&quot;step&quot;:10,&quot;unit&quot;:&quot;%&quot;,&quot;tsType&quot;:&quot;number&quot;,&quot;section&quot;:&quot;Look&quot;},&quot;spineFinish&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;flat&quot;,&quot;gradient&quot;,&quot;ribbed&quot;],&quot;default&quot;:&quot;gradient&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Shelf&quot;},&quot;reflection&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Shelf&quot;},&quot;showMusic&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Shelf&quot;}}">
+const CATS = { "Branding": 27, "Interfaces": 14 };
+const CHARS = (s, k) => s.split("").map((c, i) => ({ c: c === " " ? "\u00a0" : c, key: k + i }));
 const BE = "https://mir-s3-cdn-cf.behance.net/projects/";
 const FOLDER_HUES = [250, 158, 35, 300, 200, 20];
 
@@ -776,7 +524,14 @@ const GAL_SETS = [
 ];
 GAL_SETS.forEach(function (g) {
   g.shots = g.files.map(function (f) {
-    return { set: g.name, src: encodeURI(g.dir + f), vid: /\.mp4$/i.test(f) };
+    // grids show a 640px thumbnail; the full frame only loads in the lightbox
+    var safe = f.replace(/\s*\((\d+)\)/, "-$1").replace(/~(\d+)/, "-$1");
+    return {
+      set: g.name,
+      src: encodeURI(g.dir + f),
+      thumb: encodeURI("uploads/thumbs/" + g.name + "/" + safe),
+      vid: /\.mp4$/i.test(f)
+    };
   });
 });
 
@@ -823,7 +578,11 @@ const TRACKS = [
 ];
 
 class Component extends DCLogic {
-  state = { muted: false, live: -1, hover: -1, sel: -1, shown: 0, detail: -1, playing: false, muted2: 0, track: 0, cat: "Graphics", knob: 0 };
+  state = { muted: true, live: -1, hover: -1, sel: -1, shown: 0, detail: -1, playing: false, muted2: 0, track: 0, cat: "Graphics", knob: 0, liveSel: 0 };
+
+  // phones and small/touch machines get the light path: no autoplay video, no live
+  // iframes until asked, no backdrop blur (see the mobile @media block in <helmet>)
+  lowPower = typeof window !== "undefined" && (window.matchMedia("(hover: none) and (pointer: coarse)").matches || window.innerWidth < 700);
 
   getAudio() {
     if (!this.audio) {
@@ -942,7 +701,7 @@ class Component extends DCLogic {
     this.scanQueued = false;
     this.io = new IntersectionObserver((entries) => {
       entries.forEach((en) => {
-        if (en.isIntersecting) { en.target.setAttribute("data-reveal", "in"); this.io.unobserve(en.target); }
+        en.target.setAttribute("data-reveal", en.isIntersecting ? "in" : "out");
       });
     }, { rootMargin: "0px 0px -10% 0px", threshold: 0.08 });
     this.scanReveals();
@@ -964,8 +723,7 @@ class Component extends DCLogic {
       if (this.seen.has(el)) return;
       this.seen.add(el);
       const r = el.getBoundingClientRect();
-      if (r.top < window.innerHeight && r.bottom > 0) { el.setAttribute("data-reveal", "in"); return; }
-      el.setAttribute("data-reveal", "out");
+      el.setAttribute("data-reveal", r.top < window.innerHeight && r.bottom > 0 ? "in" : "out");
       this.io.observe(el);
     });
   }
@@ -1023,13 +781,36 @@ class Component extends DCLogic {
     window.addEventListener("resize", this.smoothReset);
   }
 
+  // no live embeds — each card is a still of the site in a laptop, and the tap opens
+  // the real thing in a new tab. `shot` takes a screenshot path once one is dropped in.
+  liveTiltRef = React.createRef();
+
+  // gentle 3D tilt that follows the pointer across the screenshot
+  liveMove = (e) => {
+    const el = this.liveTiltRef.current;
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    el.style.transition = "transform 0.2s linear";
+    el.style.transform = "rotateY(" + (x * 7).toFixed(2) + "deg) rotateX(" + (-y * 4).toFixed(2) + "deg)";
+  };
+
+  liveLeave = () => {
+    const el = this.liveTiltRef.current;
+    if (!el) return;
+    el.style.transition = "transform 0.7s cubic-bezier(0.32,0.72,0,1)";
+    el.style.transform = "rotateY(0deg) rotateX(0deg)";
+  };
+
   liveList() {
     return [
-        { name: "BURGRIX", host: "burgrix.vercel.app", url: "https://burgrix.vercel.app/", role: "Brand + site" },
-        { name: "Resilio Padel", host: "resilio-padel-website-design.vercel.app", url: "https://resilio-padel-website-design.vercel.app/", role: "Website design" },
-        { name: "Alcidia SS27", host: "ss27.alcidia.com", url: "https://ss27.alcidia.com/", role: "Collection site" },
-        { name: "Herzens SS27", host: "herzens-ss271.com", url: "https://www.herzens-ss271.com/", role: "Collection site" },
-        { name: "Herzens Presentation", host: "herzens-presentation.vercel.app", url: "https://herzens-presentation.vercel.app/", role: "Presentation" }
+        { name: "BURGRIX", host: "burgrix.vercel.app", url: "https://burgrix.vercel.app/", role: "Brand + site", shot: "uploads/live/burgrix.jpg" },
+        { name: "Resilio Padel", host: "resilio-padel-website-design.vercel.app", url: "https://resilio-padel-website-design.vercel.app/", role: "Website design", shot: "uploads/live/resilio.jpg" },
+        { name: "Alcidia SS27", host: "ss27.alcidia.com", url: "https://ss27.alcidia.com/", role: "Collection site", shot: "uploads/live/alcidia.jpg" },
+        { name: "Herzens SS27", host: "herzens-ss271.com", url: "https://www.herzens-ss271.com/", role: "Collection site", shot: "uploads/live/herzens.jpg" },
+        { name: "Herzens Proposal", host: "herzens-presentation.vercel.app", url: "https://herzens-presentation.vercel.app/", role: "Presentation", shot: "uploads/live/herzens-presentation.jpg" },
+        { name: "Resilio Admin Portal", host: "resilio-admin-portal.vercel.app", url: "https://resilio-admin-portal.vercel.app/", role: "Product UI", shot: "uploads/live/resilio-admin.jpg" }
     ];
   }
 
@@ -1043,8 +824,8 @@ class Component extends DCLogic {
       const want = past ? "glass" : "clear";
       if (el.getAttribute("data-hdr") === want) return;
       el.setAttribute("data-hdr", want);
-      el.style.background = past ? "rgba(255,255,255,0.062)" : "transparent";
-      el.style.borderBottomColor = past ? "rgba(255,255,255,0.11)" : "transparent";
+      el.style.background = past ? "rgba(10,10,10,0.62)" : "transparent";
+      el.style.borderBottomColor = "transparent";
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -1060,32 +841,53 @@ class Component extends DCLogic {
       const avail = el.clientWidth;
       if (!avail) return;
       const range = document.createRange();
-      const lines = h1.querySelectorAll(":scope > span");
-      lines.forEach((line, li) => {
-        const target = avail * (li < lines.length - 1 ? 0.58 : 1);
-        line.style.fontSize = "100px";
+      const line = h1.querySelector("[data-fit]");
+      if (!line) return;
+      // the size lives in a stylesheet, not inline: React re-renders rewrite the
+      // style attribute and would wipe an inline font-size on every state change
+      let sheet = document.getElementById("hero-fit-style");
+      if (!sheet) {
+        sheet = document.createElement("style");
+        sheet.id = "hero-fit-style";
+        document.head.appendChild(sheet);
+      }
+      const apply = (px) => { sheet.textContent = "#top h1 [data-fit] { font-size: " + px + "px !important; }"; };
+      const target = avail * (parseFloat(line.getAttribute("data-fit")) || 1);
+      apply(100);
+      range.selectNodeContents(line);
+      const w = range.getBoundingClientRect().width;
+      if (!w) return;
+      let size = Math.min(1600, Math.max(28, (100 * target) / w));
+      apply(size);
+      for (let i = 0; i < 3; i++) {
         range.selectNodeContents(line);
-        const w = range.getBoundingClientRect().width;
-        if (!w) return;
-        let size = Math.min(260, Math.max(28, (100 * target) / w));
-        line.style.fontSize = size + "px";
-        for (let i = 0; i < 3; i++) {
-          range.selectNodeContents(line);
-          const cur = range.getBoundingClientRect().width;
-          if (!cur || Math.abs(cur - target) < 0.5) break;
-          size = Math.min(260, Math.max(28, size * (target / cur)));
-          line.style.fontSize = size + "px";
-        }
-      });
+        const cur = range.getBoundingClientRect().width;
+        if (!cur || Math.abs(cur - target) < 0.5) break;
+        size = Math.min(1600, Math.max(28, size * (target / cur)));
+        apply(size);
+      }
     };
-    const run = () => requestAnimationFrame(fit);
+    const run = () => fit();
     run();
-    setTimeout(run, 60);
-    setTimeout(run, 400);
+    [60, 200, 400, 900, 1600, 2600].forEach((ms) => setTimeout(run, ms));
     if (document.fonts && document.fonts.ready) document.fonts.ready.then(run);
     if (window.ResizeObserver) new ResizeObserver(run).observe(el);
-    else window.addEventListener("resize", run);
+    window.addEventListener("resize", run);
+    // the headline characters stream in after mount — refit whenever they change
+    const h1 = el.querySelector("h1");
+    if (h1 && window.MutationObserver) {
+      const mo = new MutationObserver(run);
+      mo.observe(h1, { childList: true, subtree: true, characterData: true });
+      this._fitMo = mo;
+    }
     this._refit = run;
+  };
+
+  keyAct = (e) => {
+    if (e.key === "Enter" || e.key === " " || e.key === "Spacebar") {
+      e.preventDefault();
+      if (e.currentTarget && e.currentTarget.click) e.currentTarget.click();
+    }
   };
 
   heroVideoRef = (el) => {
@@ -1120,26 +922,36 @@ class Component extends DCLogic {
     if (!ready) window.addEventListener("load", () => { ready = true; }, { once: true });
     const tick = (t) => {
       const e = t - t0;
-      let p = 94 * (1 - Math.pow(1 - Math.min(e / 1800, 1), 2));
-      if (ready && e > 800) p = Math.max(p, Math.min(100, 60 + (e - 800) / 8));
-      if (e > 4500) p = 100;
+      let p = 94 * (1 - Math.pow(1 - Math.min(e / 3200, 1), 2));
+      if (ready && e > 2600) p = Math.max(p, Math.min(100, 60 + (e - 2600) / 22));
+      if (e > 6100) p = 100;
       const v = Math.min(100, Math.round(p));
       if (pct) pct.textContent = (v < 10 ? "0" : "") + v + "%";
       if (bar) bar.style.width = v + "%";
-      if (v >= 100) {
-        el.style.opacity = "0";
-        el.style.pointerEvents = "none";
-        this.preHide = setTimeout(() => { if (this.preRef.current) this.preRef.current.style.display = "none"; }, 760);
-        return;
-      }
+      if (v >= 100) { this.dismissPreloader(); return; }
       this.preRaf = requestAnimationFrame(tick);
     };
     this.preRaf = requestAnimationFrame(tick);
+    this.preFail = setTimeout(() => this.dismissPreloader(), 6500);
+  }
+
+  dismissPreloader() {
+    const el = this.preRef.current;
+    if (!el || this.preDone) return;
+    this.preDone = true;
+    clearTimeout(this.preFail);
+    cancelAnimationFrame(this.preRaf);
+    el.style.transform = "translateY(-100%)";
+    el.style.opacity = "0";
+    el.style.pointerEvents = "none";
+    this.preHide = setTimeout(() => { if (this.preRef.current) this.preRef.current.style.display = "none"; }, 760);
   }
 
   componentWillUnmount() {
     if (this.audio) { this.audio.pause(); this.audio.src = ""; this.audio = null; }
     cancelAnimationFrame(this.preRaf);
+    clearTimeout(this.preFail);
+    clearTimeout(this.preHide);
     cancelAnimationFrame(this.smoothRaf);
     if (this.smoothWheel) window.removeEventListener("wheel", this.smoothWheel);
     if (this.smoothAnchor) document.removeEventListener("click", this.smoothAnchor);
@@ -1355,9 +1167,9 @@ class Component extends DCLogic {
     return {
       i, title, category, year, blurb,
       color: "oklch(0.6 0.15 " + this.hue(category) + ")",
-      thumb: "url(" + BE + "max_808/" + img + ") center/cover no-repeat",
-      cover: BE + "max_808/" + img,
-      full: BE + "original/" + img,
+      thumb: "url(" + BE + "404/" + img + ") center/cover no-repeat",
+      cover: BE + "404/" + img,
+      full: BE + (this.lowPower ? "max_808/" : "original/") + img,
       href: "https://www.behance.net/gallery/" + gal,
       mark: String(i + 1).padStart(2, "0"),
       short: title.split("—")[0].replace(/[\s—-]+$/, ""),
@@ -1380,14 +1192,14 @@ class Component extends DCLogic {
 
 
   albumBg(i) {
-    const hues = [35, 250, 300, 158, 20, 275, 190];
+    const hues = [27, 14, 8, 33, 20, 3, 40];
     const h = hues[i % hues.length];
     return "linear-gradient(155deg, oklch(0.72 0.15 " + h + "), oklch(0.4 0.13 " + ((h + 45) % 360) + "))";
   }
 
   renderVals() {
     const m = (this.props.motion ?? 90) / 100;
-    const accentHue = this.props.accentHue ?? 250;
+    const accentHue = this.props.accentHue ?? 27;
     const accent = "oklch(0.55 0.16 " + accentHue + ")";
 
     const books = RAW.map((r, i) => {
@@ -1445,11 +1257,31 @@ class Component extends DCLogic {
       });
     }
 
+    const archiveFolders = inCat.map((b, k) => {
+      const isSel = this.state.sel === b.i;
+      const isHov = this.state.hover === b.i;
+      const active = isSel || isHov;
+      return Object.assign({}, b, {
+        no: String(k + 1).padStart(2, "0"),
+        flex: active ? 2.1 : 1,
+        drop: 0,
+        overlap: k === 0 ? 0 : -14,
+        z: active ? 60 : inCat.length - k,
+        tabTop: 30 + (k % 3) * 62,
+        stock: active ? "#EB000F" : "#c9c9cd",
+        tabFg: active ? "#0A0A0A" : "#3a3a41",
+        filter: active ? "none" : "grayscale(1) brightness(0.62)",
+        zoom: active ? 1.04 : 1,
+        metaOpacity: active ? 1 : 0.45
+      });
+    });
+    void catHue;
+
     const open = this.state.sel >= 0;
     const detail = this.state.detail >= 0 ? books[this.state.detail] : null;
     const nextIdx = detail ? (detail.i + 1) % books.length : 0;
     const cur = this.state.track % TRACKS.length;
-    const hues = [35, 250, 300, 158, 20, 275, 190];
+    const hues = [27, 14, 8, 33, 20, 3, 40];
     const curHue = hues[cur % hues.length];
 
     const albums = TRACKS.map((tr, i) => {
@@ -1479,16 +1311,17 @@ class Component extends DCLogic {
     const openFolder = GAL_SETS.filter((g) => g.name === gset)[0] || null;
     const shots = openFolder ? openFolder.shots : [];
     const lb = typeof this.state.lb === "number" ? this.state.lb : -1;
+    const liveSel = this.state.liveSel || 0;
     return {
-      tabs, rows, accent, open,
+      tabs, rows, archiveFolders, accent, open,
       shelfCount: books.length + " projects · " + cats.length + " shelves",
       heroRef: this.heroRef,
       heroVideoRef: this.heroVideoRef,
+      keyAct: this.keyAct,
       heroFitRef: this.heroFitRef,
       headerRef: this.headerRef,
-      heroWords: "Concept Designer".split(" ").map((w, wi) => ({
-        chars: w.split("").map((c, ci) => ({ c, key: wi + "-" + ci }))
-      })),
+      heroA: CHARS("SHOBIN®", "a"),
+      heroB: CHARS("THOMAS®", "b"),
       clock: (this.lastClock = this.clockNow()),
       filmRef: this.filmRef,
       preRef: this.preRef,
@@ -1523,11 +1356,11 @@ class Component extends DCLogic {
           name: g.name,
           note: empty ? "Drop the folder in" : g.note,
           count: empty ? "Empty" : g.files.length + (g.files.length === 1 ? " frame" : " frames"),
-          cover: cover ? cover.src : "",
+          cover: cover ? cover.thumb : "",
           hasCover: !!cover,
-          cover2: stills[1] ? stills[1].src : "",
+          cover2: stills[1] ? stills[1].thumb : "",
           hasCover2: !!stills[1],
-          cover3: stills[2] ? stills[2].src : "",
+          cover3: stills[2] ? stills[2].thumb : "",
           hasCover3: !!stills[2],
           fRiseC: on ? -4 : 0,
           fRotC: on ? 8.5 : 4.2,
@@ -1542,9 +1375,9 @@ class Component extends DCLogic {
           fRiseB: on ? -7 : 0,
           fRotA: on ? -3.4 : -1.2,
           fRotB: on ? 3.2 : 1.4,
-          fBack: "oklch(0.30 0.055 " + g.hue + ")",
-          fSheet: "oklch(0.42 0.045 " + g.hue + ")",
-          fGlass: "oklch(0.40 0.05 " + g.hue + " / 0.5)"
+          fBack: "oklch(0.52 0.22 29)",
+          fSheet: "oklch(0.42 0.19 29)",
+          fGlass: "oklch(0.56 0.24 29 / 0.55)"
         };
       }),
       galTotal: GAL_SETS.filter((g) => g.files.length).length + " folders",
@@ -1558,16 +1391,21 @@ class Component extends DCLogic {
       galCount: shots.length + (shots.length === 1 ? " frame" : " frames"),
       galClose: () => this.setState({ gset: "", lb: -1 }),
       photos: shots.map((p, i) => ({
-        src: p.src,
+        src: p.thumb,
         isImg: !p.vid,
         isVid: !!p.vid,
         alt: p.set + " — photograph by Shobin Thomas",
         onClick: () => this.setState({ lb: i }),
-        vidNode: p.vid ? React.createElement("video", {
-          src: p.src, muted: true, loop: true, playsInline: true, autoPlay: true, preload: "auto",
+        vidNode: p.vid ? (this.lowPower ? React.createElement("div", {
+          style: {
+            aspectRatio: "3 / 4", display: "flex", alignItems: "center", justifyContent: "center",
+            background: "#141418", color: "rgba(245,245,247,0.62)", fontSize: 12, letterSpacing: "0.12em"
+          }
+        }, "▶  VIDEO") : React.createElement("video", {
+          src: p.src, muted: true, loop: true, playsInline: true, autoPlay: true, preload: "metadata",
           "data-keep-sound": "1", onVolumeChange: (e) => { e.currentTarget.muted = true; },
           style: { width: "100%", height: "auto", display: "block" }
-        }) : null
+        })) : null
       })),
       lbShow: lb >= 0 ? "flex" : "none",
       lbNode: lb >= 0 ? React.createElement(shots[lb].vid ? "video" : "img", shots[lb].vid ? {
@@ -1592,8 +1430,8 @@ class Component extends DCLogic {
           onClick: () => this.setDetail(b.i),
           onEnter: () => this.setState({ hover: b.i }),
           onLeave: () => this.setState({ hover: -1 }),
-          fBack: "linear-gradient(180deg, oklch(0.36 0.06 " + h + ") 0%, oklch(0.27 0.05 " + h + ") 100%)",
-          fGlass: "linear-gradient(180deg, rgba(255,255,255,0.12) 0%, oklch(0.45 0.07 " + h + " / 0.6) 100%)",
+          fBack: "linear-gradient(180deg, oklch(0.52 0.22 29) 0%, oklch(0.36 0.17 29) 100%)",
+          fGlass: "linear-gradient(180deg, rgba(255,255,255,0.14) 0%, oklch(0.56 0.24 29 / 0.62) 100%)",
           fSheet: "linear-gradient(150deg, oklch(0.32 0.05 " + ((h + 40) % 360) + "), oklch(0.24 0.05 " + h + "))",
           fLift: on ? -8 * m : 0,
           fFront: on ? 5 * m : 0,
@@ -1604,10 +1442,17 @@ class Component extends DCLogic {
         });
       }),
       liveSites: this.liveList().map((s, i) => Object.assign({}, s, {
-        pe: this.state.live === i ? "auto" : "none",
-        shield: this.state.live === i ? "none" : "flex",
-        activate: () => this.setState({ live: i })
+        idx: i,
+        ml: i === 0 ? "0%" : "-7%",
+        zi: i + 1,
+        lift: [0, -18, -8, -24, -12][i % 5],
+        liftUp: [0, -18, -8, -24, -12][i % 5] - 26
       })),
+      liveShown: this.liveList()[liveSel] || this.liveList()[0],
+      liveTiltRef: this.liveTiltRef,
+      liveMove: this.liveMove,
+      liveLeave: this.liveLeave,
+      liveCount: this.liveList().length + " sites",
       albums,
       bars: Array.from({ length: 18 }, (_, i) => ({
         dur: (0.62 + ((i * 7) % 9) * 0.07).toFixed(2),
@@ -1628,13 +1473,15 @@ class Component extends DCLogic {
         }
         this.setState({ muted });
       },
-      muteLabel: this.state.muted ? "Unmute audio" : "Mute audio",
+      muteLabel: this.state.muted ? "Unmute" : "Mute",
       mutePath: this.state.muted
         ? "M4 9.4h3.1L11 6v12L7.1 14.6H4zM15.1 9.3l1.3-1.3 2 2 2-2 1.3 1.3-2 2 2 2-1.3 1.3-2-2-2 2-1.3-1.3 2-2z"
         : "M4 9.4h3.1L11 6v12L7.1 14.6H4zM14.4 8.6a4.6 4.6 0 0 1 0 6.8l-1.1-1.2a3 3 0 0 0 0-4.4zM16.6 6.2a7.8 7.8 0 0 1 0 11.6l-1.1-1.2a6.2 6.2 0 0 0 0-9.2z",
-      muteBg: this.state.muted ? "rgba(255,255,255,0.05)" : "rgba(227,177,131,0.16)",
-      muteFg: this.state.muted ? "rgba(244,244,246,0.42)" : "#e3b183",
-      muteBorder: this.state.muted ? "rgba(255,255,255,0.14)" : "rgba(227,177,131,0.4)",
+      muteBg: "transparent",
+      muteFg: this.state.muted ? "rgba(245,245,247,0.55)" : "#EB000F",
+      muteBorder: this.state.muted ? "rgba(255,255,255,0.18)" : "rgba(235,0,15,0.6)",
+      playLabel: this.state.playing ? "Pause" : "Play",
+      playPath: this.state.playing ? "M8 5.6h2.9v12.8H8zM13.1 5.6H16v12.8h-2.9z" : "M7 5.4 19 12 7 18.6z",
       knobs: [
         { label: "Prev", path: "M7 6h2.2v12H7zM19 6.6v10.8L10.6 12z", anti: this.state.knob * 40, rot: -this.state.knob * 40, dot: "#e3b183", dotGlow: "rgba(217,160,106,0.8)", onClick: () => this.playTrack(this.state.track - 1) },
         { label: this.state.playing ? "Pause" : "Play", path: this.state.playing ? "M8 5.6h2.9v12.8H8zM13.1 5.6H16v12.8h-2.9z" : "M7 5.4 19 12 7 18.6z", anti: this.state.playing ? -32 : 32, rot: this.state.playing ? 32 : -32, dot: this.state.playing ? "oklch(0.88 0.15 145)" : "rgba(245,245,247,0.7)", dotGlow: this.state.playing ? "oklch(0.8 0.18 145 / 0.85)" : "rgba(255,255,255,0.25)", onClick: () => { if (this.state.playing) this.pauseTrack(); else this.playTrack(this.state.track); } },
@@ -1655,6 +1502,9 @@ class Component extends DCLogic {
         opacity: i === cur ? 1 : 0.42,
         border: i === cur ? "rgba(255,255,255,0.121)" : "rgba(255,255,255,0.14)",
         shadow: i === cur ? "0 10px 18px -10px rgba(0,0,0,0.9), 0 0 0 3px rgba(255,255,255,0.1)" : "0 6px 12px -8px rgba(0,0,0,0.8)",
+        fg: i === cur ? "#f5f5f7" : "rgba(245,245,247,0.55)",
+        badge: i === cur ? "#EB000F" : "rgba(245,245,247,0.3)",
+        state: i === cur ? (this.state.playing ? "Playing" : "Paused") : String(i + 1).padStart(2, "0"),
         onClick: () => this.playTrack(i)
       })),
       current: {
